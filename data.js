@@ -57,7 +57,7 @@ const data = [
                 "tag": "color palette"
             },
             {
-                "logo": "https://coolors.co/assets/img/coolors_logo.svg",
+                "logo": "https://coolors.co/assets/img/ios_icon.png",
                 "name": "Coolors",
                 "description": "The super fast color schemes generator!",
                 "url": "https://coolors.co/",
@@ -240,57 +240,57 @@ const data = [
             },
             {
                 "logo": "https://www.51pptmoban.com/favicon.ico",
-                "name": "51PPT模板网",
-                "description": "提供免费PPT模板下载，PPT素材下载，PPT图表下载，PPT背景图片下载，PPT教程下载，PPT软件下载，PPT字体下载，PPT配色方案下载，PPT插件下载，PPT教程视频下载等资源下载。",
+                "name": "51PPT Template",
+                "description": "Provides free PPT template downloads, PPT material downloads, PPT chart downloads, PPT background image downloads, PPT tutorial downloads, PPT software downloads, PPT font downloads, PPT color scheme downloads, PPT plug-in downloads, PPT tutorial video downloads and other resource downloads.",
                 "url": "https://www.51pptmoban.com/",
                 "tag": "PPT template"
             },
             {
                 "logo": "https://www.pptstore.net/favicon.ico",
                 "name": "PPTSTORE",
-                "description": "PPTSTORE是一个专业的PPT模板下载网站，提供各类高质量的PPT模板下载，包括商务、教育、科技、艺术等多种类型，满足您的各种需求。",
+                "description": "PPTSTORE is a professional PPT template download website, providing various high-quality PPT template downloads, including business, education, technology, art and other types to meet your various needs.",
                 "url": "https://www.pptstore.net/",
                 "tag": "PPT template"
             },
             {
                 "logo": "https://www.pptplus.cn/favicon.ico",
                 "name": "PPTPlus",
-                "description": "PPTPlus是一个专业的PPT模板下载网站，提供各类高质量的PPT模板下载，包括商务、教育、科技、艺术等多种类型，满足您的各种需求。",
+                "description": "PPTPlus is a professional PPT template download website, providing various high-quality PPT template downloads, including business, education, technology, art and other types to meet your various needs.",
                 "url": "https://www.pptplus.cn/",
                 "tag": "PPT template"
             },
             {
                 "logo": "https://www.pptbz.com/d/file/2014/12/03/4d7d1d9d5d7d7f7f7d7d7d7f7f7d7d7d.jpg",
-                "name": "PPT宝藏",
-                "description": "提供免费PPT模板下载，PPT素材下载，PPT图表下载，PPT背景图片下载，PPT教程下载，PPT软件下载，PPT字体下载，PPT配色方案下载，PPT插件下载，PPT教程视频下载等资源下载。",
+                "name": "PPT Treasure",
+                "description": "Provides free PPT template downloads, PPT material downloads, PPT chart downloads, PPT background image downloads, PPT tutorial downloads, PPT software downloads, PPT font downloads, PPT color scheme downloads, PPT plug-in downloads, PPT tutorial video downloads and other resource downloads.",
                 "url": "https://www.pptbz.com/",
                 "tag": "PPT template"
             },
             {
                 "logo": "https://www.51ppt.com.cn/favicon.ico",
                 "name": "51PPT",
-                "description": "51PPT模板网是一个专业的PPT模板下载网站，提供各类高质量的PPT模板下载，包括商务、教育、科技、艺术等多种类型，满足您的各种需求。",
+                "description": "51PPT Template is a professional PPT template download website, providing various high-quality PPT template downloads, including business, education, technology, art and other types to meet your various needs.",
                 "url": "https://www.51ppt.com.cn/",
                 "tag": "PPT template"
             },
             {
                 "logo": "https://www.pptfans.cn/favicon.ico",
                 "name": "PPTFans",
-                "description": "PPTFans是一个专业的PPT模板下载网站，提供各类高质量的PPT模板下载，包括商务、教育、科技、艺术等多种类型，满足您的各种需求。",
+                "description": "PPTFans is a professional PPT template download website, providing various high-quality PPT template downloads, including business, education, technology, art and other types to meet your various needs.",
                 "url": "https://www.pptfans.cn/",
                 "tag": "PPT template"
             },
             {
                 "logo": "https://www.pptbz.com/d/file/2014/12/03/4d7d1d9d5d7d7f7f7d7d7d7f7f7d7d7d.jpg",
-                "name": "PPT之家",
-                "description": "PPT之家是一个专业的PPT模板下载网站，提供各类高质量的PPT模板下载，包括商务、教育、科技、艺术等多种类型，满足您的各种需求。",
+                "name": "PPT Home",
+                "description": "PPT Home is a professional PPT template download website, providing various high-quality PPT template downloads, including business, education, technology, art and other types to meet your various needs.",
                 "url": "https://www.pptbz.com/",
                 "tag": "PPT template"
             },
             {
                 "logo": "https://www.pptok.com/favicon.ico",
                 "name": "PPTOK",
-                "description": "PPTOK是一个专业的PPT模板下载网站，提供各类高质量的PPT模板下载，包括商务、教育、科技、艺术等多种类型，满足您的各种需求。",
+                "description": "PPTOK is a professional PPT template download website, providing various high-quality PPT template downloads, including business, education, technology, art and other types to meet your various needs.",
                 "url": "https://www.pptok.com/",
                 "tag": "PPT template"
             },

@@ -12,8 +12,7 @@
             text-decoration: none;
         }
         body{
-            background-color: gray;
-            background-image: linear-gradient(to right, #f6d365 0%, #fda085 100%);
+            background-image:linear-gradient(to right, #f6d365, #fda085, #f6d365);
         }
 
         .card {
@@ -25,7 +24,7 @@
             border: 1px solid #ccc;
             border-radius: 8px;
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-            width: 27%;
+            width: 29%;
             transition: all 0.3s ease;
         }
 
@@ -64,8 +63,12 @@
 
         .card h3 {
             margin: 0;
-            font-size: 22px;
+            font-size: 20px;
             text-align: left;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
         }
 
         .card p {
@@ -78,6 +81,9 @@
             -webkit-line-clamp: 3;
             -webkit-box-orient: vertical;
             text-overflow: ellipsis;
+            text-align: justify;
+            
+
         }
 
         .cards-container {
