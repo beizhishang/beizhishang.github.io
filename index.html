@@ -2,8 +2,10 @@
 <html>
 
 <head>
-    <title>Navigation Page</title>
+    <title>Resources</title>
     <meta charset="utf-8">
+    <link rel="shortcut icon" href="./images/icon/logo.png" type="image/x-icon">
+
 
     <style>
         * {
@@ -12,7 +14,11 @@
             text-decoration: none;
         }
         body{
-            background-image:linear-gradient(to right, #f6d365, #fda085, #f6d365);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url("./images/picture/food.png");
+            background-color:#428a78;
         }
 
         .card {
@@ -68,13 +74,13 @@
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-
+            color:navy;
         }
 
         .card p {
             margin: 5px 0 0;
             font-size: 14px;
-            color: #666;
+            color: #967c7c;
             text-align: left;
             overflow: hidden;
             display: -webkit-box;
@@ -107,7 +113,7 @@
             left: 0;
             right: 0;
             z-index: 1;
-            background-color: white;
+            background:url("images/picture/cubes.png") #6eb9a5;
             transition: all 0.3s ease;
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
         }
@@ -143,7 +149,7 @@
             border-radius: 5px;
             border: none;
             background-color: #ccc;
-            color: gray;
+            color: darkblue;
             margin-right: 10px;
             cursor: pointer;
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
@@ -192,11 +198,7 @@
         }
 
         /* ADD KEYBOARD SHORTCUTS FOR SEARCH */
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+       
 
         .shortcut {
             margin-top: 20px;
@@ -245,7 +247,7 @@
     <div class="cards-container" id="cards"></div>
     <div class="shortcut">Press <span>Ctrl + F</span> to focus on search bar</div>
     <footer></footer>
-    <script src="data.js"></script>
+    <script src="./js/data.js"></script>
     
     <script>
 
@@ -299,7 +301,7 @@
         }
 
         function getRandomColor() {
-            const colors = ["hsla(233, 100%, 90%, 1)", "hsla(234, 80%, 88%, 1)", "hsla(186, 66%, 40%, 1)", "hsla(186, 66%, 40%, 1)", "hsla(259, 84%, 78%, 1)", "hsla(311, 74%, 87%, 1)", "hsla(221, 59%, 75%, 1)", "hsla(312, 77%, 86%, 1)", "hsla(242, 58%, 73%, 1)", "hsla(311, 74%, 87%, 1)"];
+            const colors = ["hsla(233, 100%, 90%, 1)", "hsla(234, 80%, 88%, 1)", "hsl(150deg 46% 80%)", "hsla(259, 84%, 78%, 1)", "hsla(311, 74%, 87%, 1)", "hsla(221, 59%, 75%, 1)", "hsla(312, 77%, 86%, 1)", "hsla(242, 58%, 73%, 1)", "hsla(311, 74%, 87%, 1)"];
             color = colors[Math.floor(Math.random() * colors.length)];
             return color;
         }
