@@ -30,10 +30,14 @@
             border: 1px solid #ccc;
             border-radius: 8px;
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-            width: 29%;
+            width: 20%;
+            height: 78px;
             transition: all 0.3s ease;
         }
 
+        a:active{
+            color: black;
+        }
         .card:hover,button:hover {
             transform: translateY(-5px);
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
@@ -60,8 +64,8 @@
             float: left;
             border-radius: 8px;
             object-fit: contain;
-            height: 80px;
-            width: 80px;
+            height: 40px;
+            width: 40px;
             margin-right: 10px;
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
             transition: all 0.3s ease;
@@ -69,18 +73,18 @@
 
         .card h3 {
             margin: 0;
-            font-size: 20px;
+            font-size: 18px;
             text-align: left;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            color:navy;
+
         }
 
         .card p {
             margin: 5px 0 0;
             font-size: 14px;
-            color: #967c7c;
+            color: #666;
             text-align: left;
             overflow: hidden;
             display: -webkit-box;
@@ -203,12 +207,12 @@
         .shortcut {
             margin-top: 20px;
             font-size: 14px;
-            color: #666;
+            color: lightgray;
         }
 
         .shortcut span {
             font-weight: bold;
-            color: #000;
+            color: white;
         }
 
         /* ADD ANIMATION EFFECTS TO SEARCH */
@@ -279,13 +283,13 @@
             cards.innerHTML = "";
             filteredData.forEach((item, index) => {
                 const card = `
-                    <div class="card" style="background-color: ${getRandomColor()};">
+                    <div class="card" style="background-color: ${getRandomColor()}">
                         <a href="${item.url}" target="_blank">
                             <div class="card-content">
                                 <img src="${item.logo}" alt="${item.name} logo">
                                 <div class="card-text">
                                     <h3 class="card-title">${item.name}</h3>
-                                    <p class="card-description" title="${item.description}">${item.description}</p>
+                                    <p>${item.description}</p>
                                 </div>
                             </div>
                         </a>
@@ -301,20 +305,20 @@
         }
 
         function getRandomColor() {
-            const colors = ["hsla(233, 100%, 90%, 1)", "hsla(234, 80%, 88%, 1)", "hsl(150deg 46% 80%)", "hsla(259, 84%, 78%, 1)", "hsla(311, 74%, 87%, 1)", "hsla(221, 59%, 75%, 1)", "hsla(312, 77%, 86%, 1)", "hsla(242, 58%, 73%, 1)", "hsla(311, 74%, 87%, 1)"];
+            const colors = ["hsla(233, 100%, 90%, 1)", "hsla(234, 80%, 88%, 1)", "hsl(150deg 46% 71%)", "hsla(259, 84%, 78%, 1)", "hsla(311, 74%, 87%, 1)", "hsla(221, 59%, 75%, 1)", "hsla(312, 77%, 86%, 1)", "hsla(242, 58%, 73%, 1)", "hsla(311, 74%, 87%, 1)"];
             color = colors[Math.floor(Math.random() * colors.length)];
             return color;
         }
 
         data.forEach((item, index) => {
             const card = `
-                    <div class="card" style="background-color: ${getRandomColor()};">
+                    <div class="card" style="background-color: ${getRandomColor()}">
                         <a href="${item.url}" target="_blank">
                             <div class="card-content">
                                 <img src="${item.logo}" alt="${item.name} logo">
                                 <div class="card-text">
                                     <h3 class="card-title">${item.name}</h3>
-                                    <p class="card-description" title="${item.description}">${item.description}</p>
+                                    <p>${item.description}</p>
                                 </div>
                             </div>
                         </a>
@@ -380,4 +384,3 @@
 </body>
 
 </html>
-

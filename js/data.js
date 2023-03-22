@@ -4,14 +4,14 @@ const data = [
                 "name": "Canva",
                 "description": "Create beautiful designs with your team. Use Canva's drag-and-drop feature and layouts to design, share and print business cards, logos, presentations and more.",
                 "url": "https://www.canva.com",
-                "tag": "design tool"
+                "tag": "design"
             },
             {
                 "logo": "https://www.notion.so/images/favicon.ico",
                 "name": "Notion",
                 "description": "A productivity tool for notes, tasks, wikis, and databases.",
                 "url": "https://www.notion.so",
-                "tag": "productivity tool"
+                "tag": "productivity"
             },
 
             {
@@ -19,77 +19,77 @@ const data = [
                 "name": "Trello",
                 "description": "Infinitely flexible. Incredibly easy to use. Great mobile apps. It's free. Trello keeps track of everything, from the big picture to the minute details.",
                 "url": "https://www.trello.com",
-                "tag": "productivity tool"
+                "tag": "productivity"
             },
             {
                 "logo": "https://www.asana.com/favicon.ico",
                 "name": "Asana",
                 "description": "Work anytime, anywhere with Asana. Keep remote and distributed teams, and your entire organization, focused on their goals, projects, and tasks with Asana.",
                 "url": "https://www.asana.com",
-                "tag": "productivity tool"
+                "tag": "productivity"
             },
             {
                 "logo": "https://pixabay.com/favicon-32x32.png",
                 "name": "Pixabay",
                 "description": "Over 1.8 million+ high quality stock images and videos shared by our talented community.",
                 "url": "https://www.pixabay.com",
-                "tag": "image stock"
+                "tag": "image"
             },
             {
                 "logo": "https://www.unsplash.com/favicon.ico",
                 "name": "Unsplash",
                 "description": "Beautiful, free images and photos that you can download and use for any project. Better than any royalty free or stock photos.",
                 "url": "https://www.unsplash.com",
-                "tag": "image stock"
+                "tag": "image"
             },
             {
                 "logo": "https://www.pexels.com/assets/static/images/meta/favicon.ico",
                 "name": "Pexels",
                 "description": "Best free stock photos in one place. Discover and download free images and videos for use in any project.",
                 "url": "https://www.pexels.com",
-                "tag": "image stock"
+                "tag": "image"
             },
             {
                 "logo": "https://colorhunt.co/img/color-hunt-icon-192.png?v4",
                 "name": "Color Hunt",
                 "description": "Color Hunt is a free and open platform for color inspiration with thousands of trendy hand-picked color palettes",
                 "url": "https://colorhunt.co/",
-                "tag": "color palette"
+                "tag": "color"
             },
             {
                 "logo": "https://coolors.co/assets/img/ios_icon.png",
                 "name": "Coolors",
                 "description": "The super fast color schemes generator!",
                 "url": "https://coolors.co/",
-                "tag": "color palette"
+                "tag": "color"
             },
             {
                 "logo": "https://color.adobe.com/favicon.ico",
                 "name": "Adobe Color",
                 "description": "Create color palettes with the color wheel, hex or image. Browse thousands of color combinations for usage in Photoshop, Illustrator etc.",
                 "url": "https://color.adobe.com/create/color-wheel",
-                "tag": "color palette"
+                "tag": "color"
             },
             {
                 "logo": "https://www.materialpalette.com/favicon.ico",
                 "name": "Material Palette",
                 "description": "Choose your favorite colors and get your Material Design palette generated and downloadable.",
                 "url": "https://www.materialpalette.com/",
-                "tag": "color palette"
+                "tag": "color"
             },
             {
                 "logo": "https://static.colourlovers.com/images/v4.0/_/footer-logo.png?16",
                 "name": "Colourlovers",
                 "description": "Color Trends + Palettes :: COLOURlovers",
                 "url": "https://www.colourlovers.com/",
-                "tag": "color palette"
+                "tag": "color"
             },
             {
                 "logo": "https://assets.website-files.com/5dd40aa8049df8748c72d0ee/5dd9b94105da589ba59c4907_happy-hues-fav.png",
                 "name": "Happy Hues",
                 "description": "Happy Hues - Curated colors in context.",
                 "url": "https://www.happyhues.co/",
-                "tag": "color palette"
+                "tag": "color"
             },
 {
                 "logo": "https://www.tensorflow.org/favicon.ico",
@@ -145,161 +145,161 @@ const data = [
                 "name": "Shutterstock",
                 "description": "Download the best royalty free images from Shutterstock, including photos, vectors, and illustrations. Enjoy straightforward pricing and simple licensing.",
                 "url": "https://www.shutterstock.com/",
-                "tag": "image stock"
+                "tag": "image"
             },
             {
                 "logo": "https://www.istockphoto.com/favicon.ico",
                 "name": "iStock",
                 "description": "Explore millions of exclusive, royalty-free, stock photos, images, and videos. Find the perfect image for your project, fast. Search now.",
                 "url": "https://www.istockphoto.com/",
-                "tag": "image stock"
+                "tag": "image"
             },
             {
                 "logo": "https://www.gettyimages.com/favicon.ico",
                 "name": "Getty Images",
                 "description": "Find high-quality stock photos, editorial news pictures, and video footage by searching among the world's leading creative stock image providers.",
                 "url": "https://www.gettyimages.com/",
-                "tag": "image stock"
+                "tag": "image"
             },
             {
                 "logo": "https://www.freepik.com/favicon.ico",
                 "name": "Freepik",
                 "description": "Find & Download Free Graphic Resources for Graphic Design. 7+ Million Graphic Resources. Free for commercial use ✓ High Quality Images.",
                 "url": "https://www.freepik.com/",
-                "tag": "image stock"
+                "tag": "image"
             },
             {
                 "logo": "https://www.vectorstock.com/favicon.ico",
                 "name": "VectorStock",
                 "description": "VectorStock - Vector Art, Images, Graphics & Clipart",
                 "url": "https://www.vectorstock.com/",
-                "tag": "image stock"
+                "tag": "image"
             },
             {
                 "logo": "https://www.flaticon.com/favicon.ico",
                 "name": "Flaticon",
                 "description": "Free vector icons - SVG, PSD, PNG, EPS & Icon Font - Thousands of free icons",
                 "url": "https://www.flaticon.com/",
-                "tag": "image stock"
+                "tag": "image"
             },
             {
                 "logo": "https://www.pngtree.com/favicon.ico",
                 "name": "Pngtree",
                 "description": "Millions of PNG Images, Backgrounds and Vectors for Free Download. Pngtree provides free download of png, png images, backgrounds and vector. Millions of high quality free png images, PSD, AI and EPS Files are available.",
                 "url": "https://www.pngtree.com/",
-                "tag": "image stock"
+                "tag": "image"
             },
             {
                 "logo": "https://www.ppttemplate.net/wp-content/uploads/2019/01/cropped-ppttemplate-logo-1.png",
                 "name": "PPT Template",
                 "description": "Free PowerPoint Templates and Google Slides Themes",
                 "url": "https://www.ppttemplate.net/",
-                "tag": "PPT template"
+                "tag": "PPT"
             },
             {
                 "logo": "https://www.slidescarnival.com/wp-content/uploads/2016/08/favicon512-2-225x225.png",
                 "name": "Slides Carnival",
                 "description": "Free Powerpoint templates and Google Slides themes for your presentations",
                 "url": "https://www.slidescarnival.com/",
-                "tag": "PPT template"
+                "tag": "PPT"
             },
             {
                 "logo": "https://www.free-power-point-templates.com/images/favicon.png",
                 "name": "Free PowerPoint Templates",
                 "description": "Download free PowerPoint templates and backgrounds! We have the best collection of professional templates, charts and diagrams.",
                 "url": "https://www.free-power-point-templates.com/",
-                "tag": "PPT template"
+                "tag": "PPT"
             },
             {
                 "logo": "https://www.powerpointify.com/wp-content/uploads/2019/06/cropped-Logo-2.png",
                 "name": "PowerPointify",
                 "description": "Free and Premium PowerPoint Templates",
                 "url": "https://www.powerpointify.com/",
-                "tag": "PPT template"
+                "tag": "PPT"
             },
             {
                 "logo": "https://www.showeet.com/wp-content/uploads/2017/09/cropped-showeet-logo-1.png",
                 "name": "Showeet",
                 "description": "Free PowerPoint Templates and Google Slides Themes",
                 "url": "https://www.showeet.com/",
-                "tag": "PPT template"
+                "tag": "PPT"
             },
             {
                 "logo": "https://www.slidemodel.com/wp-content/uploads/2016/05/cropped-SlideModel-Logo-1.png",
                 "name": "SlideModel",
                 "description": "Professional PowerPoint Templates & Slides",
                 "url": "https://www.slidemodel.com/",
-                "tag": "PPT template"
+                "tag": "PPT"
             },
             {
                 "logo": "https://www.presentationgo.com/wp-content/uploads/2018/03/cropped-presentationgo-logo-1.png",
                 "name": "PresentationGO",
                 "description": "Free PowerPoint Templates and Google Slides Themes",
                 "url": "https://www.presentationgo.com/",
-                "tag": "PPT template"
+                "tag": "PPT"
             },
             {
                 "logo": "https://www.slidescarnival.com/wp-content/uploads/2017/09/favicon.png",
                 "name": "Slides Carnival",
                 "description": "Free Powerpoint templates and Google Slides themes for your presentations",
                 "url": "https://www.slidescarnival.com/",
-                "tag": "PPT template"
+                "tag": "PPT"
             },
             {
                 "logo": "https://www.51pptmoban.com/favicon.ico",
                 "name": "51PPT Template",
                 "description": "Provides free PowerPoint templates for various needs, including business, education, and creative presentations.",
                 "url": "https://www.51pptmoban.com/",
-                "tag": "PPT template"
+                "tag": "PPT"
             },
             {
                 "logo": "https://www.pptstore.net/favicon.ico",
                 "name": "PPTSTORE",
                 "description": "PPTSTORE provides high-quality PPT templates for various needs.",
                 "url": "https://www.pptstore.net/",
-                "tag": "PPT template"
+                "tag": "PPT"
             },
             {
                 "logo": "https://www.pptplus.cn/favicon.ico",
                 "name": "PPTPlus",
                 "description": "PPTPlus provides high-quality PPT templates for various needs.",
                 "url": "https://www.pptplus.cn/",
-                "tag": "PPT template"
+                "tag": "PPT"
             },
             {
                 "logo": "https://www.pptbz.com/d/file/2014/12/03/4d7d1d9d5d7d7f7f7d7d7d7f7f7d7d7d.jpg",
                 "name": "PPT Treasure",
                 "description": "Provides free PowerPoint templates for various needs.",
                 "url": "https://www.pptbz.com/",
-                "tag": "PPT template"
+                "tag": "PPT"
             },
             {
                 "logo": "https://www.51ppt.com.cn/favicon.ico",
                 "name": "51PPT",
                 "description": "51PPT Template is a professional PPT template download website.",
                 "url": "https://www.51ppt.com.cn/",
-                "tag": "PPT template"
+                "tag": "PPT"
             },
             {
                 "logo": "https://www.pptfans.cn/favicon.ico",
                 "name": "PPTFans",
                 "description": "PPTFans - professional PPT template download website",
                 "url": "https://www.pptfans.cn/",
-                "tag": "PPT template"
+                "tag": "PPT"
             },
             {
                 "logo": "https://www.pptbz.com/d/file/2014/12/03/4d7d1d9d5d7d7f7f7d7d7d7f7f7d7d7d.jpg",
                 "name": "PPT Home",
                 "description": "PPT Home - professional PPT template download website",
                 "url": "https://www.pptbz.com/",
-                "tag": "PPT template"
+                "tag": "PPT"
             },
             {
                 "logo": "https://www.pptok.com/favicon.ico",
                 "name": "PPTOK",
                 "description": "PPTOK is a professional PPT template download website that provides high-quality PPT templates for various needs.",
                 "url": "https://www.pptok.com/",
-                "tag": "PPT template"
+                "tag": "PPT"
             },
             {
                 "logo": "https://www.wikipedia.org/static/favicon/wikipedia.ico",
@@ -442,60 +442,11 @@ const data = [
                 "tag": "news"
             },
             {
-                "logo": "https://www.bbc.com/favicon.ico",
-                "name": "BBC News",
-                "description": "Visit BBC News for up-to-the-minute news, breaking news, video, audio and feature stories. BBC News provides trusted World and UK news as well as local and regional perspectives. Also entertainment, business, science, technology and health news.",
-                "url": "https://www.bbc.com/news",
-                "tag": "news"
-            },
-            {
-                "logo": "https://www.theguardian.com/favicon.ico",
-                "name": "The Guardian",
-                "description": "Latest US news, world news, sports, business, opinion, analysis and reviews from the Guardian, the world's leading liberal voice.",
-                "url": "https://www.theguardian.com/us",
-                "tag": "news"
-            },
-            {
-                "logo": "https://www.cnn.com/favicon.ico",
-                "name": "CNN",
-                "description": "View the latest news and breaking news today for U.S., world, weather, entertainment, politics and health at CNN",
-                "url": "https://www.cnn.com/",
-                "tag": "news"
-            },
-            {
-                "logo": "https://www.npr.org/favicon.ico",
-                "name": "NPR",
-                "description": "NPR delivers breaking national and world news. Also top stories from business, politics, health, science, technology, music, arts and culture. Subscribe to podcasts and RSS feeds.",
-                "url": "https://www.npr.org/",
-                "tag": "news"
-            },
-            {
-                "logo": "https://www.foxnews.com/favicon.ico",
-                "name": "Fox News",
-                "description": "Breaking News, Latest News and Current News from FOXNews.com. Breaking news and video. Latest Current News: U.S., World, Entertainment, Health, Business, Technology, Politics, Sports.",
-                "url": "https://www.foxnews.com/",
-                "tag": "news"
-            },
-            {
-                "logo": "https://www.bbc.com/favicon.ico",
-                "name": "BBC News",
-                "description": "Visit BBC News for up-to-the-minute news, breaking news, video, audio and feature stories. BBC News provides trusted World and UK news as well as local and regional perspectives. Also entertainment, business, science, technology and health news.",
-                "url": "https://www.bbc.com/news",
-                "tag": "news"
-            },
-            {
-                "logo": "https://www.theguardian.com/favicon.ico",
-                "name": "The Guardian",
-                "description": "Latest US news, world news, sports, business, opinion, analysis and reviews from the Guardian, the world's leading liberal voice.",
-                "url": "https://www.theguardian.com/us",
-                "tag": "news"
-            },
-            {
                 "logo": "https://cn.office-converter.com/favicon.ico",
                 "name": "Office Converter",
                 "description": "Convert various formats of documents, images, audio, video, and archives online for free.",
                 "url": "https://cn.office-converter.com/",
-                "tag": "file conversion"
+                "tag": "conversion"
             },
             {
                 "logo": "https://www.iconfinder.com/icons/299087/earth_global_globe_internet_map_planet_world_icon",
@@ -546,7 +497,40 @@ const data = [
                 "url": "https://www.toptal.com/designers/subtlepatterns/",
                 "tag": "design"
             },
-            
-            
+            {
+                "logo": "https://cdn.document360.io/logo/3040c2b6-fead-4744-a3a9-d56d621c6c7e/778d06e9a335497ba965629e3b83a31f-MJ_Boat.png",
+                "name": "midjourney",
+                "description": "midjourney is a website that provides free stock photos, videos, and music for personal and commercial use.",
+                "url": "https://www.midjourney.com/",
+                "tag": "design"
+            },
+            {
+                "logo": "https://www.dalle2.com/favicon.ico",
+                "name": "DALL.E 2",
+                "description": "DALL.E 2 is a website that provides free AI-generated images.",
+                "url": "https://www.dalle2.com/",
+                "tag": "design"
+            },
+            {
+                "logo": "https://www.stablediffusion.com/favicon.ico",
+                "name": "Stable Diffusion",
+                "description": "Stable Diffusion is a website that provides free textures and patterns for use in web design and graphic design projects.",
+                "url": "https://www.stablediffusion.com/",
+                "tag": "design"
+            },
+            {
+                "logo": "https://www.netlify.com/favicon.ico",
+                "name": "Netlify",
+                "description": "Netlify is a web developer platform that multiplies productivity. By unifying the elements of the modern decoupled web, from local development to advanced edge logic, Netlify enables a 10x faster path to much more performant, secure, and scalable websites and apps.",
+                "url": "https://www.netlify.com/",
+                "tag": "web"
+            },
+            {
+                "logo": "https://www.pega.com/themes/custom/pega_bolt_theme/images/favicons/favicon-32x32.png",
+                "name": "Pega",
+                "description": "Pega is the leader in cloud software for customer engagement and operational excellence.",
+                "url": "https://www.pega.com/",
+                "tag": "software"
+            }
 
 ];
