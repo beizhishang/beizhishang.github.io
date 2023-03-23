@@ -531,6 +531,181 @@ const data = [
                 "description": "Pega is the leader in cloud software for customer engagement and operational excellence.",
                 "url": "https://www.pega.com/",
                 "tag": "software"
-            }
+            },
+            {
+                "logo": "https://www.species-in-pieces.com/favicon.ico",
+                "name": "Species in Pieces",
+                "description": "Species in Pieces is a website that showcases endangered species through stunning animated illustrations.",
+                "url": "http://www.species-in-pieces.com/#",
+                "tag": "design"
+            },
+{
+                "logo": "https://www.flaticon.com/favicon.ico",
+                "name": "Flaticon",
+                "description": "Flaticon is the largest icon database. With this extension, you will have free access to our icons for your Google Docs, Slides, Forms and Sheets.",
+                "url": "https://www.flaticon.com/",
+                "tag": "icon"
+            },
+            {
+                "logo": "https://icons8.com/favicon.ico",
+                "name": "Icons8",
+                "description": "Icons8 is a website that provides free icons, photos, vectors, music, and tools for use in web design and graphic design projects.",
+                "url": "https://icons8.com/",
+                "tag": "design"
+            },
+            {
+                "logo": "https://www.iconfinder.com/favicon.ico",
+                "name": "IconFinder",
+                "description": "IconFinder is a website that provides free and premium icons for use in web design and graphic design projects.",
+                "url": "https://www.iconfinder.com/",
+                "tag": "icon"
+            },
+            {
+                "logo": "https://www.iconfont.cn/favicon.ico",
+                "name": "点心图标",
+                "description": "点心图标是阿里巴巴矢量图标库，提供矢量图标下载、在线存储、格式转换等功能。",
+                "url": "https://www.iconfont.cn/",
+                "tag": "icon"
+            },
+            {
+                "logo": "https://thenounproject.com/favicon.ico",
+                "name": "The Noun Project",
+                "description": "The Noun Project is a website that provides free icons and stock photos for use in web design and graphic design projects.",
+                "url": "https://thenounproject.com/",
+                "tag": "icon"
+            },
+            {
+                "logo": "https://iconsvg.xyz/favicon.ico",
+                "name": "iconsvg",
+                "description": "iconsvg is a website that provides free SVG icons for use in web design and graphic design projects.",
+                "url": "https://iconsvg.xyz/",
+                "tag": "icon"
+            },
+            {
+                "logo": "https://www.streamlineicons.com/favicon.ico",
+                "name": "Streamline 3.0",
+                "description": "Streamline 3.0 is a website that provides high-quality icons, illustrations, and design assets for use in web design and graphic design projects.",
+                "url": "https://www.streamlineicons.com/",
+                "tag": "icon"
+            },
+            {
+                "logo": "https://iconmonstr.com/wp-content/themes/iconmonstr/assets/ico/favicon.ico",
+                "name": "Iconmonstr",
+                "description": "Iconmonstr is a website that provides free icons and illustrations for use in web design and graphic design projects.",
+                "url": "https://iconmonstr.com/",
+                "tag": "icon"
+            },
+{
+                "logo": "https://www.helpling.cn/favicon.ico",
+                "name": "合灵",
+                "description": "合灵是一家提供家政服务的在线平台，提供清洁、保姆、月嫂、钟点工等服务。",
+                "url": "https://www.helpling.cn/",
+                "tag": "service"
+            },
+            {
+                "logo": "https://www.365ppt.com/favicon.ico",
+                "name": "365ppt",
+                "description": "365ppt提供免费的PPT模板、PPT图表、PPT背景图片、PPT素材等资源下载。",
+                "url": "https://www.365ppt.com/",
+                "tag": "design"
+            },
+            {
+                "logo": "https://www.edrawsoft.com/favicon.ico",
+                "name": "Edraw",
+                "description": "Edraw是一款功能强大的图表软件，支持各种图表类型，包括流程图、组织结构图、网络图、P&ID、楼层平面图、UML、ERD、战略地图等。",
+                "url": "https://www.edrawsoft.com/",
+                "tag": "design"
+            },
+            {
+                "logo": "https://www.linkedin.com/favicon.ico",
+                "name": "LinkedIn",
+                "description": "LinkedIn是全球最大的职业社交平台，帮助用户建立职业人脉、分享职业经验、获取职业机会。",
+                "url": "https://www.linkedin.com/",
+                "tag": "networking"
+            },
+            {
+                "logo": "https://www.slidescarnival.com/favicon.ico",
+                "name": "幻灯片库",
+                "description": "幻灯片库提供免费的PPT模板，包括商务、教育、科技、艺术等多个领域。",
+                "url": "https://www.slidescarnival.com/",
+                "tag": "design"
+            },
+            {
+                "logo": "https://www.speackybox.com/favicon.ico",
+                "name": "演讲稿王",
+                "description": "演讲稿王是一款在线演讲稿制作工具，提供多种演讲稿模板和素材，帮助用户快速制作出精美的演讲稿。",
+                "url": "https://www.speackybox.com/",
+                "tag": "design"
+            },
+            {
+                "logo": "http://www.pptok.com/favicon.ico",
+                "name": "皮皮动态",
+                "description": "皮皮动态提供免费的PPT模板、PPT图表、PPT背景图片、PPT素材等资源下载。",
+                "url": "http://www.pptok.com/",
+                "tag": "design"
+            },
+            {
+                "logo": "https://prezi.com/favicon.ico",
+                "name": "Prezi",
+                "description": "Prezi是一款在线演示文稿制作工具，提供多种演示文稿模板和素材，帮助用户快速制作出精美的演示文稿。",
+                "url": "https://prezi.com/",
+                "tag": "design"
+            },
+{
+                "logo": "https://www.elance.com/favicon.ico",
+                "name": "Elance",
+                "description": "Elance is a website that connects businesses with freelancers to get work done.",
+                "url": "https://www.elance.com/",
+                "tag": "freelance"
+            },
+            {
+                "logo": "https://www.fiverr.com/favicon.ico",
+                "name": "Fiverr",
+                "description": "Fiverr is a website that connects businesses with freelancers to get work done.",
+                "url": "https://www.fiverr.com/",
+                "tag": "freelance"
+            },
+            {
+                "logo": "https://www.freelancer.com/favicon.ico",
+                "name": "Freelancer",
+                "description": "Freelancer is a website that connects businesses with freelancers to get work done.",
+                "url": "https://www.freelancer.com/",
+                "tag": "freelance"
+            },
+            {
+                "logo": "https://www.upwork.com/favicon.ico",
+                "name": "Upwork",
+                "description": "Upwork is a website that connects businesses with freelancers to get work done.",
+                "url": "https://www.upwork.com/",
+                "tag": "freelance"
+            },
+            {
+                "logo": "https://www.craigslist.org/favicon.ico",
+                "name": "Craigslist",
+                "description": "Craigslist is a website that connects businesses with freelancers to get work done.",
+                "url": "https://www.craigslist.org/",
+                "tag": "freelance"
+            },
+            {
+                "logo": "http://www.powerpointfreelance.com/favicon.ico",
+                "name": "Powerpointfreelance.com",
+                "description": "Powerpointfreelance.com is a website that connects businesses with freelancers to get PowerPoint work done.",
+                "url": "http://www.powerpointfreelance.com/",
+                "tag": "freelance"
+            },
+            {
+                "logo": "https://www.guru.com/favicon.ico",
+                "name": "Guru",
+                "description": "Guru is a website that connects businesses with freelancers to get work done.",
+                "url": "https://www.guru.com/",
+                "tag": "freelance"
+            },
+{
+                "logo": "https://99designs.com/favicon.ico",
+                "name": "99Designs",
+                "description": "99Designs is a website that connects businesses with freelance designers to get design work done.",
+                "url": "https://99designs.com/",
+                "tag": "design"
+            },
 
 ];
