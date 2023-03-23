@@ -1,5 +1,69 @@
 const data = [
             {
+                "logo": "https://debuild.co/favicon.ico",
+                "name": "Debuild",
+                "description": "Debuild is a platform for developers to showcase their projects and connect with other developers.",
+                "url": "https://debuild.co",
+                "tag": "developer"
+            },
+            {
+                "logo": "https://www.grammarly.com/favicon.ico",
+                "name": "Grammarly",
+                "description": "Grammarly is a digital writing assistant that helps you improve your writing and grammar skills.",
+                "url": "https://www.grammarly.com",
+                "tag": "writing"
+            },
+            {
+                "logo": "https://www.tabnine.com/static/favicon.ico",
+                "name": "Tabnine",
+                "description": "AI Code Completion Tool",
+                "url": "https://www.tabnine.com/",
+                "tag": "developer"
+            },
+            {
+                "logo": "https://omnkey.com/favicon.ico",
+                "name": "Omnkey",
+                "description": "Omnkey is a platform for developers to showcase their projects and connect with other developers.",
+                "url": "https://omnkey.com",
+                "tag": "developer"
+            },
+            {
+                "logo": "https://core.ai/favicon.ico",
+                "name": "Core.ai",
+                "description": "Core.ai is an AI-powered platform that helps businesses automate their workflows and improve their productivity.",
+                "url": "https://core.ai",
+                "tag": "AI"
+            },
+            {
+                "logo": "https://jasperapp.io/favicon.ico",
+                "name": "Jasper",
+                "description": "Jasper is a platform for creating and sharing interactive data visualizations.",
+                "url": "https://jasperapp.io",
+                "tag": "data"
+            },
+            {
+                "logo": "https://insilico.com/favicon.ico",
+                "name": "Insilico",
+                "description": "Insilico Medicine is an artificial intelligence company that develops deep learning methods for drug discovery and aging research.",
+                "url": "https://insilico.com",
+                "tag": "AI"
+            },
+            {
+                "logo": "https://www.absci.com/wp-content/uploads/2020/06/AbSci-Logo-Primary-Color-1.png",
+                "name": "AbSci",
+                "description": "AbSci is a synthetic biology company that provides a protein expression platform for biopharmaceutical drug discovery and development.",
+                "url": "https://www.absci.com/",
+                "tag": "biotech"
+            },
+
+            {
+                "logo": "https://poe.com/favicon.ico",
+                "name": "Poe",
+                "description": "Path of Exile is a free online-only action RPG under development by Grinding Gear Games in New Zealand.",
+                "url": "https://poe.com",
+                "tag": "AI"
+            },
+            {
                 "logo": "https://static.canva.com/web/images/12487a1e0770d29351bd4ce4f87ec8fe.svg",
                 "name": "Canva",
                 "description": "Create beautiful designs with your team. Use Canva's drag-and-drop feature and layouts to design, share and print business cards, logos, presentations and more.",
@@ -707,5 +771,6 @@ const data = [
                 "url": "https://99designs.com/",
                 "tag": "design"
             },
+            
 
 ];
