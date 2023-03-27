@@ -25,7 +25,7 @@
             display: flex;
             flex-direction: row;
             align-items: center;
-            margin: 10px;
+            margin: 5px;
             padding: 5px;
             border: 1px solid #ccc;
             border-radius: 8px;
@@ -112,7 +112,7 @@
 
         .head-container {
             width: 100%;
-            height: 61px;
+            height: 10%;
             justify-content: center;
             align-items: center;
             position: fixed;
@@ -131,7 +131,7 @@
             height: 40px;
             background-color: #428a78d6;
             position: fixed;
-            top: 61px;
+            top: 55px;
             z-index: -1;
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
         }
@@ -144,7 +144,7 @@
         .search-container {
             display: flex;
             justify-content: center;
-            margin: 12px 0;
+            margin: 10px 0;
         }
 
         .search-container input {
@@ -306,7 +306,8 @@
                     <div class="card" style="background-color: ${getRandomColor()}">
                         <a href="${item.url}" target="_blank">
                             <div class="card-content">
-                                <img src="./images/icon/loading.gif" data-src="${item.logo}" alt="${item.name} logo">
+                                <img src="./images/icon/logo.png" data-src="${item.logo}" alt="${item.name} logo" onerror="this.onerror=null;this.src='./images/icon/logo.png';">
+                                
                                 <div class="card-text">
                                     <h3 class="card-title">${item.name}</h3>
                                     <p>${item.description}</p>
@@ -358,7 +359,7 @@
                     <div class="card" style="background-color: ${getRandomColor()}">
                         <a href="${item.url}" target="_blank">
                             <div class="card-content">
-                                <img src="./images/icon/loading.gif" data-src="${item.logo}" alt="${item.name} logo">
+                                <img src="./images/icon/logo.png" data-src="${item.logo}" alt="${item.name} logo" onerror="this.onerror=null;this.src='./images/icon/logo.png';">
                                 <div class="card-text">
                                     <h3 class="card-title">${item.name}</h3>
                                     <p>${item.description}</p>

@@ -1,16 +1,16 @@
 const data = [
     {
+        "logo": "https://www.overleaf.com/favicon.ico",
+        "name": "Overleaf",
+        "description": "Overleaf is a collaborative platform for writing, editing, and publishing scientific documents.",
+        "url": "https://www.overleaf.com",
+        "tag": "writing"
+    },
+    {
         "logo": "https://www.beautiful.ai/favicon.ico",
         "name": "Beautiful.ai",
         "description": "Beautiful.ai is a platform for creating beautiful presentations with ease.",
         "url": "https://www.beautiful.ai",
-        "tag": "presentation"
-    },
-    {
-        "logo": "https://chatppt.com/favicon.ico",
-        "name": "ChatPPT",
-        "description": "ChatPPT is a platform for creating interactive presentations with live chat and real-time feedback.",
-        "url": "https://chatppt.com",
         "tag": "presentation"
     },
     {
@@ -21,14 +21,14 @@ const data = [
         "tag": "writing"
     },
     {
-        "logo": "https://chatba.com/favicon.ico",
+        "logo": "./images/icon/chatba.png",
         "name": "chatBA",
-        "description": "chatBA is a platform for creating chatbots with ease.",
+        "description": "chatBA is a platform for creating intelligent, responsive, and engaging chatbots with ease. Create chatbots powered by AI, natural language processing, and machine learning. Sign up for chatBA today!",
         "url": "https://chatba.com",
         "tag": "chatbot"
     },
     {
-        "logo": "https://prezo.ai/favicon.ico",
+        "logo": "https://www.prezo.ai/_nuxt/img/prezo.8d94ba8.svg",
         "name": "Prezo",
         "description": "Prezo is a platform for creating and sharing interactive presentations with AI-powered features.",
         "url": "https://prezo.ai",
@@ -42,7 +42,7 @@ const data = [
         "tag": "presentation"
     },
     {
-        "logo": "https://autoslide.com/favicon.ico",
+        "logo": "https://autoslide.com/wp-content/uploads/2022/10/Autoslide-logo-02-300x39-2-200x26.png",
         "name": "Autoslide",
         "description": "Autoslide is a platform for creating and sharing interactive presentations with AI-powered features.",
         "url": "https://autoslide.com",
@@ -130,7 +130,7 @@ const data = [
     {
         "logo": "https://d16xvuom8mr9m8.cloudfront.net/favicons/favicon-32x32.png",
         "name": "Tabnine",
-        "description": "AI Code Completion Tool",
+        "description": "Tabnine is an AI-powered code completion tool that helps developers write code faster and more efficiently.",
         "url": "https://www.tabnine.com/",
         "tag": "developer"
     },
@@ -187,7 +187,7 @@ const data = [
     {
         "logo": "https://www.notion.so/images/favicon.ico",
         "name": "Notion",
-        "description": "A productivity tool for notes, tasks, wikis, and databases.",
+        "description": "Notion is a productivity tool that allows you to take notes, create tasks, build wikis, and manage databases all in one place. With its user-friendly interface and powerful features, Notion is the ultimate productivity tool for individuals and teams alike.",
         "url": "https://www.notion.so",
         "tag": "productivity"
     },
@@ -235,9 +235,9 @@ const data = [
         "tag": "color"
     },
     {
-        "logo": "https://coolors.co/assets/img/ios_icon.png",
+        "logo": "./images/icon/coolors.png",
         "name": "Coolors",
-        "description": "The super fast color schemes generator!",
+        "description": "The super fast color schemes generator! Generate or browse beautiful color combinations for your designs.",
         "url": "https://coolors.co/",
         "tag": "color"
     },
@@ -258,21 +258,21 @@ const data = [
     {
         "logo": "https://static.colourlovers.com/images/v4.0/_/footer-logo.png?16",
         "name": "Colourlovers",
-        "description": "Color Trends + Palettes :: COLOURlovers",
+        "description": "COLOURlovers is a platform for color inspiration with thousands of trendy hand-picked color palettes and color trends.",
         "url": "https://www.colourlovers.com/",
         "tag": "color"
     },
     {
         "logo": "https://assets.website-files.com/5dd40aa8049df8748c72d0ee/5dd9b94105da589ba59c4907_happy-hues-fav.png",
         "name": "Happy Hues",
-        "description": "Happy Hues - Curated colors in context.",
+        "description": "Happy Hues is a platform that provides curated color palettes in context, helping designers and developers find the perfect color scheme for their projects.",
         "url": "https://www.happyhues.co/",
         "tag": "color"
     },
     {
         "logo": "https://www.tensorflow.org/favicon.ico",
         "name": "TensorFlow",
-        "description": "An end-to-end open source machine learning platform",
+        "description": "An end-to-end open source machine learning platform that provides a comprehensive ecosystem of tools, libraries, and community resources to help developers and data scientists build and deploy machine learning models at scale.",
         "url": "https://www.tensorflow.org/",
         "tag": "AI"
     },
@@ -349,14 +349,14 @@ const data = [
     {
         "logo": "./images/icon/heart.png",
         "name": "VectorStock",
-        "description": "VectorStock - Vector Art, Images, Graphics & Clipart",
+        "description": "VectorStock is a platform that provides high-quality vector art, images, graphics, and clipart for various needs.",
         "url": "https://www.vectorstock.com/",
         "tag": "image"
     },
     {
         "logo": "https://www.flaticon.com/favicon.ico",
         "name": "Flaticon",
-        "description": "Free vector icons - SVG, PSD, PNG, EPS & Icon Font - Thousands of free icons",
+        "description": "Free vector icons - SVG, PSD, PNG, EPS & Icon Font - Thousands of free icons for personal and commercial use",
         "url": "https://www.flaticon.com/",
         "tag": "image"
     },
@@ -370,14 +370,14 @@ const data = [
     {
         "logo": "https://www.ppttemplate.net/wp-content/uploads/2019/01/cropped-ppttemplate-logo-1.png",
         "name": "PPT Template",
-        "description": "Free PowerPoint Templates and Google Slides Themes",
+        "description": "PPT Template is a professional PPT template download website that provides free PowerPoint Templates and Google Slides Themes for various needs.",
         "url": "https://www.ppttemplate.net/",
         "tag": "PPT"
     },
     {
         "logo": "https://www.slidescarnival.com/wp-content/uploads/2016/08/favicon512-2-225x225.png",
         "name": "Slides Carnival",
-        "description": "Free Powerpoint templates and Google Slides themes for your presentations",
+        "description": "Find free PowerPoint templates and Google Slides themes for your presentations and make them more professional and attractive.",
         "url": "https://www.slidescarnival.com/",
         "tag": "PPT"
     },
@@ -391,28 +391,28 @@ const data = [
     {
         "logo": "https://powerpointify.com/wp-content/uploads/2018/02/cropped-favicon-32x32.png",
         "name": "PowerPointify",
-        "description": "Free and Premium PowerPoint Templates",
+        "description": "Find a wide variety of free and premium PowerPoint templates for various needs, including business, education, and creative presentations.",
         "url": "https://www.powerpointify.com/",
         "tag": "PPT"
     },
     {
         "logo": "https://www.showeet.com/favicon.ico",
         "name": "Showeet",
-        "description": "Free PowerPoint Templates and Google Slides Themes",
+        "description": "Find free PowerPoint templates and Google Slides themes for your presentations and make them more professional and attractive.",
         "url": "https://www.showeet.com/",
         "tag": "PPT"
     },
     {
         "logo": "https://www.slidemodel.com/wp-content/uploads/2016/05/cropped-SlideModel-Logo-1.png",
         "name": "SlideModel",
-        "description": "Professional PowerPoint Templates & Slides",
+        "description": "Find professional PowerPoint templates and slides for various needs, including business, education, and creative presentations.",
         "url": "https://www.slidemodel.com/",
         "tag": "PPT"
     },
     {
         "logo": "https://www.presentationgo.com/wp-content/uploads/2018/03/cropped-presentationgo-logo-1.png",
         "name": "PresentationGO",
-        "description": "Free PowerPoint Templates and Google Slides Themes",
+        "description": "Find free PowerPoint templates and Google Slides themes for your presentations and make them more professional and attractive. PresentationGO provides a wide variety of free and premium PowerPoint templates for various needs, including business, education, and creative presentations.",
         "url": "https://www.presentationgo.com/",
         "tag": "PPT"
     },
@@ -426,42 +426,42 @@ const data = [
     {
         "logo": "https://www.pptstore.net/favicon.ico",
         "name": "PPTSTORE",
-        "description": "PPTSTORE provides high-quality PPT templates for various needs.",
+        "description": "PPTSTORE is a professional PPT template download website that provides high-quality PPT templates for various needs, including business, education, and creative presentations. With PPTSTORE, you can easily find the perfect PPT template for your project and make your presentation more professional and attractive.",
         "url": "https://www.pptstore.net/",
         "tag": "PPT"
     },
     {
         "logo": "https://www.pptplus.cn/favicon.ico",
         "name": "PPTPlus",
-        "description": "PPTPlus provides high-quality PPT templates for various needs.",
+        "description": "PPTPlus is a professional PPT template download website that provides high-quality PPT templates for various needs, including business, education, and creative presentations. With PPTPlus, you can easily find the perfect PPT template for your project and make your presentation more professional and attractive.",
         "url": "https://www.pptplus.cn/",
         "tag": "PPT"
     },
     {
         "logo": "https://www.pptbz.com/d/file/2014/12/03/4d7d1d9d5d7d7f7f7d7d7d7f7f7d7d7d.jpg",
         "name": "PPT Treasure",
-        "description": "Provides free PowerPoint templates for various needs.",
+        "description": "51PPT Template is a professional PPT template download website that provides free PowerPoint templates and Google Slides Themes for various needs, including business, education, and creative presentations.", 
         "url": "https://www.pptbz.com/",
         "tag": "PPT"
     },
     {
         "logo": "https://www.51ppt.com.cn/favicon.ico",
         "name": "51PPT",
-        "description": "51PPT Template is a professional PPT template download website.",
+        "description": "51PPT Template is a professional PPT template download website that provides high-quality PowerPoint templates and Google Slides Themes for various needs, including business, education, and creative presentations. With 51PPT Template, you can easily find the perfect PPT template for your project and make your presentation more professional and attractive.",
         "url": "https://www.51ppt.com.cn/",
         "tag": "PPT"
     },
     {
         "logo": "https://www.pptfans.cn/favicon.ico",
         "name": "PPTFans",
-        "description": "PPTFans - professional PPT template download website",
+        "description": "PPTFans is a professional PPT template download website that provides high-quality PowerPoint templates and Google Slides Themes for various needs, including business, education, and creative presentations. With PPTFans, you can easily find the perfect PPT template for your project and make your presentation more professional and attractive.",
         "url": "https://www.pptfans.cn/",
         "tag": "PPT"
     },
     {
         "logo": "https://www.pptbz.com/d/file/2014/12/03/4d7d1d9d5d7d7f7f7d7d7d7f7f7d7d7d.jpg",
         "name": "PPT Home",
-        "description": "PPT Home - professional PPT template download website",
+        "description": "PPT Home is a professional PPT template download website that provides high-quality PowerPoint templates and Google Slides Themes for various needs, including business, education, and creative presentations. With PPT Home, you can easily find the perfect PPT template for your project and make your presentation more professional and attractive.",
         "url": "https://www.pptbz.com/",
         "tag": "PPT"
     },
@@ -671,7 +671,7 @@ const data = [
     {
         "logo": "https://www.dalle2.com/favicon.ico",
         "name": "DALL.E 2",
-        "description": "DALL.E 2 is a website that provides free AI-generated images.",
+        "description": "DALL.E 2 is a website that provides free AI-generated images. These images are created using advanced artificial intelligence algorithms that can generate highly realistic and detailed images of a wide range of subjects, from animals and landscapes to people and objects. Whether you are a designer, artist, or simply someone who loves beautiful images, DALL.E 2 is the perfect resource for finding stunning and unique visuals to use in your projects.",
         "url": "https://www.dalle2.com/",
         "tag": "design"
     },
