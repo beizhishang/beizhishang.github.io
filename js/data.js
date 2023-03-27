@@ -1,41 +1,155 @@
 const data = [
     {
-        "logo": "https://debuild.co/favicon.ico",
+        "logo": "https://www.beautiful.ai/favicon.ico",
+        "name": "Beautiful.ai",
+        "description": "Beautiful.ai is a platform for creating beautiful presentations with ease.",
+        "url": "https://www.beautiful.ai",
+        "tag": "presentation"
+    },
+    {
+        "logo": "https://chatppt.com/favicon.ico",
+        "name": "ChatPPT",
+        "description": "ChatPPT is a platform for creating interactive presentations with live chat and real-time feedback.",
+        "url": "https://chatppt.com",
+        "tag": "presentation"
+    },
+    {
+        "logo": "https://beta.tome.app/assets/static/favicon.ac8d93a.6464fe3dc7e2025075554128c6c2c094.png",
+        "name": "Tome",
+        "description": "Tome is a platform for writers to create, share, and discover stories.",
+        "url": "https://beta.tome.app/",
+        "tag": "writing"
+    },
+    {
+        "logo": "https://chatba.com/favicon.ico",
+        "name": "chatBA",
+        "description": "chatBA is a platform for creating chatbots with ease.",
+        "url": "https://chatba.com",
+        "tag": "chatbot"
+    },
+    {
+        "logo": "https://prezo.ai/favicon.ico",
+        "name": "Prezo",
+        "description": "Prezo is a platform for creating and sharing interactive presentations with AI-powered features.",
+        "url": "https://prezo.ai",
+        "tag": "presentation"
+    },
+    {
+        "logo": "https://cos.sankki.com/resource/common/favicon2.ico",
+        "name": "闪击PPT",
+        "description": "闪击PPT is a platform for creating professional presentations with ease.",
+        "url": "https://ppt.sankki.com/#/intro",
+        "tag": "presentation"
+    },
+    {
+        "logo": "https://autoslide.com/favicon.ico",
+        "name": "Autoslide",
+        "description": "Autoslide is a platform for creating and sharing interactive presentations with AI-powered features.",
+        "url": "https://autoslide.com",
+        "tag": "presentation"
+    },
+    {
+        "logo": "https://presentai.io/favicon.ico",
+        "name": "PresentAI",
+        "description": "PresentAI is a platform for creating and sharing interactive presentations with AI-powered features.",
+        "url": "https://presentai.io",
+        "tag": "presentation"
+    },
+    {
+        "logo": "https://www.powtoon.com/favicon.ico",
+        "name": "Powtoon",
+        "description": "Powtoon is a platform for creating animated videos and presentations with ease.",
+        "url": "https://www.powtoon.com",
+        "tag": "presentation"
+    },
+    {
+        "logo": "https://gamma.com/favicon.ico",
+        "name": "Gamma",
+        "description": "Gamma is a platform for creating and sharing interactive presentations with AI-powered features.",
+        "url": "https://gamma.com",
+        "tag": "presentation"
+    },
+
+    {
+        "logo": "https://flowgpt.com/favicon.ico",
+        "name": "FlowGPT",
+        "description": "FlowGPT is a platform for developers to generate natural language text using GPT models.",
+        "url": "https://flowgpt.com",
+        "tag": "developer"
+    },
+    {
+        "logo": "https://chat.forchange.cn/favicon.ico",
+        "name": "ForChange Chat",
+        "description": "ForChange Chat is a platform for people to connect and discuss social and environmental issues.",
+        "url": "https://chat.forchange.cn",
+        "tag": "social"
+    },
+    {
+        "logo": "./images/icon/leiapix.png",
+        "name": "LeiaPix",
+        "description": "LeiaPix is a platform for photographers to showcase their work and connect with other photographers.",
+        "url": "https://leiapix.com",
+        "tag": "photography"
+    },
+    {
+        "logo": "https://www.zjlib.cn/favicon.ico",
+        "name": "Zhejiang Library",
+        "description": "Zhejiang Library is a public library located in Hangzhou, China. It provides various resources and services to the public.",
+        "url": "https://www.zjlib.cn/",
+        "tag": "library"
+    },
+    {
+        "logo": "https://www.zlibrary.io/favicon.ico",
+        "name": "Z-Library",
+        "description": "Z-Library is one of the largest online libraries in the world that contains over 6,223,000 books and 80,646,000 articles. We aim to make literature accessible to everyone.",
+        "url": "https://www.zlibrary.io/",
+        "tag": "library"
+    },
+    {
+        "logo": "https://www.ask.com/favicon.ico",
+        "name": "Ask",
+        "description": "Ask is a search engine that provides answers to questions in a conversational format.",
+        "url": "https://www.ask.com/",
+        "tag": "search"
+    },
+    
+    {
+        "logo": "https://debuild.app/favicon/favicon.ico",
         "name": "Debuild",
         "description": "Debuild is a platform for developers to showcase their projects and connect with other developers.",
         "url": "https://debuild.co",
         "tag": "developer"
     },
     {
-        "logo": "https://www.grammarly.com/favicon.ico",
+        "logo": "https://static.grammarly.com/assets/files/524adc79be04712e3a336059c2959e2e/favicon.ico",
         "name": "Grammarly",
         "description": "Grammarly is a digital writing assistant that helps you improve your writing and grammar skills.",
         "url": "https://www.grammarly.com",
         "tag": "writing"
     },
     {
-        "logo": "https://www.tabnine.com/static/favicon.ico",
+        "logo": "https://d16xvuom8mr9m8.cloudfront.net/favicons/favicon-32x32.png",
         "name": "Tabnine",
         "description": "AI Code Completion Tool",
         "url": "https://www.tabnine.com/",
         "tag": "developer"
     },
     {
-        "logo": "https://omnkey.com/favicon.ico",
+        "logo": "./images/icon/logo.png",
         "name": "Omnkey",
         "description": "Omnkey is a platform for developers to showcase their projects and connect with other developers.",
         "url": "https://omnkey.com",
         "tag": "developer"
     },
     {
-        "logo": "https://core.ai/favicon.ico",
+        "logo": "https://core.ai/img/core.ai.logo.svg",
         "name": "Core.ai",
         "description": "Core.ai is an AI-powered platform that helps businesses automate their workflows and improve their productivity.",
         "url": "https://core.ai",
         "tag": "AI"
     },
     {
-        "logo": "https://jasperapp.io/favicon.ico",
+        "logo": "https://jasperapp.io/image/favicon.png",
         "name": "Jasper",
         "description": "Jasper is a platform for creating and sharing interactive data visualizations.",
         "url": "https://jasperapp.io",
@@ -49,7 +163,7 @@ const data = [
         "tag": "AI"
     },
     {
-        "logo": "https://www.absci.com/wp-content/uploads/2020/06/AbSci-Logo-Primary-Color-1.png",
+        "logo": "https://www.absci.com/wp-content/uploads/2021/06/cropped-absci-favicon_002-1-1-32x32.png",
         "name": "AbSci",
         "description": "AbSci is a synthetic biology company that provides a protein expression platform for biopharmaceutical drug discovery and development.",
         "url": "https://www.absci.com/",
@@ -198,7 +312,7 @@ const data = [
         "tag": "AI"
     },
     {
-        "logo": "https://www.openai.com/favicon.ico",
+        "logo": "./images/icon/logo.png",
         "name": "OpenAI",
         "description": "OpenAI is an AI research laboratory consisting of the forerunners of the AI industry. They are dedicated to creating safe AI and ensuring that the benefits of AI are shared with everyone.",
         "url": "https://www.openai.com/",
@@ -212,14 +326,14 @@ const data = [
         "tag": "image"
     },
     {
-        "logo": "https://www.istockphoto.com/favicon.ico",
+        "logo": "./images/icon/heart.png",
         "name": "iStock",
         "description": "Explore millions of exclusive, royalty-free, stock photos, images, and videos. Find the perfect image for your project, fast. Search now.",
         "url": "https://www.istockphoto.com/",
         "tag": "image"
     },
     {
-        "logo": "https://www.gettyimages.com/favicon.ico",
+        "logo": "./images/icon/robot.png",
         "name": "Getty Images",
         "description": "Find high-quality stock photos, editorial news pictures, and video footage by searching among the world's leading creative stock image providers.",
         "url": "https://www.gettyimages.com/",
@@ -233,7 +347,7 @@ const data = [
         "tag": "image"
     },
     {
-        "logo": "https://www.vectorstock.com/favicon.ico",
+        "logo": "./images/icon/heart.png",
         "name": "VectorStock",
         "description": "VectorStock - Vector Art, Images, Graphics & Clipart",
         "url": "https://www.vectorstock.com/",
@@ -275,14 +389,14 @@ const data = [
         "tag": "PPT"
     },
     {
-        "logo": "https://www.powerpointify.com/wp-content/uploads/2019/06/cropped-Logo-2.png",
+        "logo": "https://powerpointify.com/wp-content/uploads/2018/02/cropped-favicon-32x32.png",
         "name": "PowerPointify",
         "description": "Free and Premium PowerPoint Templates",
         "url": "https://www.powerpointify.com/",
         "tag": "PPT"
     },
     {
-        "logo": "https://www.showeet.com/wp-content/uploads/2017/09/cropped-showeet-logo-1.png",
+        "logo": "https://www.showeet.com/favicon.ico",
         "name": "Showeet",
         "description": "Free PowerPoint Templates and Google Slides Themes",
         "url": "https://www.showeet.com/",
@@ -300,13 +414,6 @@ const data = [
         "name": "PresentationGO",
         "description": "Free PowerPoint Templates and Google Slides Themes",
         "url": "https://www.presentationgo.com/",
-        "tag": "PPT"
-    },
-    {
-        "logo": "https://www.slidescarnival.com/wp-content/uploads/2017/09/favicon.png",
-        "name": "Slides Carnival",
-        "description": "Free Powerpoint templates and Google Slides themes for your presentations",
-        "url": "https://www.slidescarnival.com/",
         "tag": "PPT"
     },
     {
@@ -359,13 +466,6 @@ const data = [
         "tag": "PPT"
     },
     {
-        "logo": "https://www.pptok.com/favicon.ico",
-        "name": "PPTOK",
-        "description": "PPTOK is a professional PPT template download website that provides high-quality PPT templates for various needs.",
-        "url": "https://www.pptok.com/",
-        "tag": "PPT"
-    },
-    {
         "logo": "https://www.wikipedia.org/static/favicon/wikipedia.ico",
         "name": "Wikipedia",
         "description": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation.",
@@ -405,28 +505,28 @@ const data = [
         "name": "Snopes",
         "description": "The definitive Internet reference source for researching urban legends, folklore, myths, rumors, and misinformation.",
         "url": "https://www.snopes.com/",
-        "tag": "fact-checking"
+        "tag": "news"
     },
     {
         "logo": "https://www.factcheck.org/wp-content/themes/factcheck/images/favicon.ico",
         "name": "FactCheck.org",
         "description": "A nonpartisan, nonprofit “consumer advocate” for voters that aims to reduce the level of deception and confusion in U.S. politics.",
         "url": "https://www.factcheck.org/",
-        "tag": "fact-checking"
+        "tag": "news"
     },
     {
         "logo": "https://www.politifact.com/apple-touch-icon.png",
         "name": "PolitiFact",
         "description": "PolitiFact is a fact-checking website that rates the accuracy of claims by elected officials and others who speak up in American politics.",
         "url": "https://www.politifact.com/",
-        "tag": "fact-checking"
+        "tag": "news"
     },
     {
         "logo": "https://www.truthorfiction.com/wp-content/uploads/2019/03/cropped-tf-icon-512x512-192x192.png",
         "name": "Truth or Fiction",
         "description": "Truth or Fiction is a website that provides fact-checking and myth-busting information related to news, politics, and other topics.",
         "url": "https://www.truthorfiction.com/",
-        "tag": "fact-checking"
+        "tag": "news"
     },
     {
         "logo": "https://www.allsides.com/sites/default/files/favicon_0.ico",
@@ -611,7 +711,7 @@ const data = [
         "tag": "icon"
     },
     {
-        "logo": "https://icons8.com/favicon.ico",
+        "logo": "https://maxst.icons8.com/vue-static/landings/primary-landings/favs/icons8_fav_32%C3%9732.png",
         "name": "Icons8",
         "description": "Icons8 is a website that provides free icons, photos, vectors, music, and tools for use in web design and graphic design projects.",
         "url": "https://icons8.com/",
@@ -639,14 +739,14 @@ const data = [
         "tag": "icon"
     },
     {
-        "logo": "https://iconsvg.xyz/favicon.ico",
+        "logo": "https://iconsvg.xyz/favicon-32.png",
         "name": "iconsvg",
         "description": "iconsvg is a website that provides free SVG icons for use in web design and graphic design projects.",
         "url": "https://iconsvg.xyz/",
         "tag": "icon"
     },
     {
-        "logo": "https://www.streamlineicons.com/favicon.ico",
+        "logo": "https://framerusercontent.com/modules/JXrL75qUbgufEvxcRvdu/Pwz0866Mj5u6MGyj6hsw/assets/xYWUE6fSnRyPyBimyskHG7Gws.png",
         "name": "Streamline 3.0",
         "description": "Streamline 3.0 is a website that provides high-quality icons, illustrations, and design assets for use in web design and graphic design projects.",
         "url": "https://www.streamlineicons.com/",
@@ -681,31 +781,17 @@ const data = [
         "tag": "design"
     },
     {
-        "logo": "https://www.linkedin.com/favicon.ico",
+        "logo": "./images/icon/linkedin.png",
         "name": "LinkedIn",
         "description": "LinkedIn is the world's largest professional social platform, helping users build professional connections, share professional experiences, and get professional opportunities.",
         "url": "https://www.linkedin.com/",
         "tag": "networking"
     },
     {
-        "logo": "https://www.slidescarnival.com/favicon.ico",
-        "name": "SlidesCarnival",
-        "description": "SlidesCarnival provides free PPT templates in multiple fields, including business, education, technology, art, etc.",
-        "url": "https://www.slidescarnival.com/",
-        "tag": "design"
-    },
-    {
         "logo": "https://www.speackybox.com/favicon.ico",
         "name": "Speackybox",
         "description": "Speackybox is an online speech manuscript production tool that provides a variety of speech manuscript templates and materials to help users quickly create beautiful speech manuscripts.",
         "url": "https://www.speackybox.com/",
-        "tag": "design"
-    },
-    {
-        "logo": "http://www.pptok.com/favicon.ico",
-        "name": "PPTOK",
-        "description": "PPTOK provides free PPT templates, PPT charts, PPT background images, PPT materials and other resources for download.",
-        "url": "http://www.pptok.com/",
         "tag": "design"
     },
     {

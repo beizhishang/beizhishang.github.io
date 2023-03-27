@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="user-input">
+    <button id="send-button">发送</button>
+    <div id="reply"></div>
+</body>
+<script>
+    // 预定义的回答列表
+    const replyList = {
+        "你好": "你好啊！",
+        "你叫什么名字": "我叫小小机器人。",
+        "你喜欢什么颜色": "我是机器人，没有喜欢或不喜欢的颜色。",
+        "再见": "很高兴能和你聊天，下次再见！"
+    };
+
+    // 处理用户输入并返回回答
+    function getReply(userInput) {
+        // 去除用户输入的空格和标点符号
+        userInput = userInput.replace(/[^\w\s]/gi, "").trim();
+
+        // 将用户输入转换为小写
+        userInput = userInput.toLowerCase();
+
+        // 查找是否有匹配的回答
+        for (let key in replyList) {
+            if (userInput.includes(key)) {
+                return replyList[key];
+            }
+        }
+
+        // 如果没有找到匹配的回答，则返回默认回答
+        return "我不明白你的意思，请换个问题试试。";
+    }
+
+    // 处理用户输入并展示回答
+    function handleUserInput() {
+        // 获取用户输入
+        const userInput = document.getElementById("user-input").value;
+
+        // 获取回答元素
+        const replyElement = document.getElementById("reply");
+
+        // 处理用户输入并获取回答
+        const reply = getReply(userInput);
+
+        // 展示回答
+        replyElement.innerHTML = reply;
+    }
+
+    // 绑定“发送”按钮的点击事件
+    document.getElementById("send-button").addEventListener("click", handleUserInput);
+</script>
+
+</html>
