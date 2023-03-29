@@ -1,5 +1,20 @@
 const data = [
     {
+        "logo": "https://framer.com/static/images/favicon-32x32.png",
+        "name": "Framer",
+        "description": "Framer is a platform for creating interactive designs, prototypes, and animations with ease.",
+        "url": "https://framer.com",
+        "tag": "design"
+    },
+    {
+        "logo": "https://shapes.framer.website/favicon.ico",
+        "name": "Framer Shapes",
+        "description": "Framer Shapes is a platform for creating and sharing design components and UI kits for Framer.",
+        "url": "https://shapes.framer.website/",
+        "tag": "design"
+    },
+
+    {
         "logo": "https://z-lib.is/static/images/logo.png",
         "name": "Z-Library",
         "description": "Z-Library is one of the largest online libraries in the world that contains over 6,223,000 books and 80,646,000 articles. We aim to make literature accessible to everyone.",
