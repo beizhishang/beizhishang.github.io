@@ -4,7 +4,7 @@
 <head>
     <title>Resources</title>
     <meta charset="utf-8">
-    <link rel="shortcut icon" href="./images/icon/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./src/images/icon/logo.png" type="image/x-icon">
 
     <style>
         * {
@@ -17,7 +17,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-image: url("./images/picture/food.png");
+            background-image: url("./src/images/picture/food.png");
             background-color: #428a78;
         }
 
@@ -120,12 +120,12 @@
             left: 0;
             right: 0;
             z-index: 1;
-            background: url("images/picture/cubes.png") #2e4845;
+            background: url("src/images/picture/cubes.png") #2e4845;
             transition: all 0.3s ease;
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
         }
 
-        .head-container::after{
+        .head-container::after {
             content: "";
             width: 100%;
             height: 40px;
@@ -134,6 +134,7 @@
             top: 55px;
             z-index: -1;
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            background: url("src/images/picture/food.png") #41c4b546;
         }
 
         .head-container:hover {
@@ -167,7 +168,7 @@
         #tags::-webkit-scrollbar {
             width: 0;
         }
-        
+
         .tags-container button {
             padding: 5px;
             border-radius: 5px;
@@ -254,7 +255,7 @@
         }
 
         footer {
-            height: 200px;
+            height: 100px;
         }
     </style>
 </head>
@@ -271,7 +272,7 @@
     <div class="cards-container" id="cards"></div>
     <div class="shortcut">Press <span>Ctrl + F</span> to focus on search bar</div>
     <footer></footer>
-    <script src="./js/data.js"></script>
+    <script src="./src/js/data.js"></script>
 
     <script>
 
@@ -306,7 +307,7 @@
                     <div class="card" style="background-color: ${getRandomColor()}">
                         <a href="${item.url}" target="_blank">
                             <div class="card-content">
-                                <img src="./images/icon/logo.png" data-src="${item.logo}" alt="${item.name} logo" onerror="this.onerror=null;this.src='./images/icon/logo.png';">
+                                <img src="./src/images/icon/logo.png" data-src="${item.logo}" alt="${item.name} logo" onerror="this.onerror=null;this.src='./images/icon/logo.png';">
                                 
                                 <div class="card-text">
                                     <h3 class="card-title">${item.name}</h3>
@@ -359,7 +360,7 @@
                     <div class="card" style="background-color: ${getRandomColor()}">
                         <a href="${item.url}" target="_blank">
                             <div class="card-content">
-                                <img src="./images/icon/logo.png" data-src="${item.logo}" alt="${item.name} logo" onerror="this.onerror=null;this.src='./images/icon/logo.png';">
+                                <img src="./src/images/icon/logo.png" data-src="${item.logo}" alt="${item.name} logo" onerror="this.onerror=null;this.src='./images/icon/logo.png';">
                                 <div class="card-text">
                                     <h3 class="card-title">${item.name}</h3>
                                     <p>${item.description}</p>
@@ -424,6 +425,21 @@
         lazyLoad();
 
     </script>
+
+    <!-- Chatra {literal} -->
+    <script>
+        (function (d, w, c) {
+            w.ChatraID = 'vS4oXDBXEBLjkKQhd';
+            var s = d.createElement('script');
+            w[c] = w[c] || function () {
+                (w[c].q = w[c].q || []).push(arguments);
+            };
+            s.async = true;
+            s.src = 'https://call.chatra.io/chatra.js';
+            if (d.head) d.head.appendChild(s);
+        })(document, window, 'Chatra');
+    </script>
+    <!-- /Chatra {/literal} -->
 </body>
 
 </html>

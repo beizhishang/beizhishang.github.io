@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/beizhishang/beizhishang.github.io/issues"
   },
-  "homepage": "https://github.com/beizhishang/beizhishang.github.io#readme"
+  "homepage": "https://github.com/beizhishang/beizhishang.github.io#readme",
+  "dependencies": {
+    "astro": "^2.1.7"
+  }
 }
