@@ -1,4 +1,12 @@
 const data = [
+
+    {
+        "logo": "https://storyset.com/favicon-32x32.png",
+        "name": "Storyset",
+        "description": "编辑和动画所有我们的可定制插图，完全免费，以增强您的项目。",
+        "url": "https://storyset.com",
+        "tag": "image"
+    },
     {
         
         "logo": "https://tableconvert.com/images/favicon.png",
