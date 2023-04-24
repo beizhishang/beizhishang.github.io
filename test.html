@@ -1,26 +1,431 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Page</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
+<style>
+  * {
+    text-decoration: none;
+    color: rgb(4, 39, 40);
+    margin: 0;
+    padding: 0;
+  }
+
+  .searchbar {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #85ba88c0;
+  }
+
+  #searchBox {
+    position: relative;
+    margin: 10px 0;
+    left: 10%;
+    transform: translateX(-30%);
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 12px 20px 12px 60px;
+    width: 30%;
+    height: 20px;
+    background-image: url('https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/search-512.png');
+    background-position: 20px 50%;
+    background-repeat: no-repeat;
+    background-size: 20px;
+  }
+
+  #searchBox:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px 0 #4CAF50;
+  }
+
+  #searchButton:hover {
+    background-color: #45a049;
+  }
+
+  #list {
+    list-style-type: none;
+    width: 100%;
+    margin-top: 70px;
+  }
+
+  #list li {
+    padding: 12px 20px;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  #list li:nth-child(2n-1) {
+    background: rgba(165, 164, 164, 0.105);
+  }
+
+  #list li:last-child {
+    border-bottom: none;
+  }
+
+  #dataSelect {
+    position: relative;
+    height: 45px;
+    width: 150px;
+    margin: 12px;
+    background-color: #04AA6D;
+    color: white;
+    padding: 13px;
+    font-size: 16px;
+    border: none;
+    user-select: none;
+    border-radius: 5px;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content p {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content p:hover {
+    background-color: #ddd;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+
+  .highlight {
+    background-color: rgb(176, 227, 244);
+    font-weight: bold;
+  }
+
+  /* Added code starts here */
+  #backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    background-color: #85ba88c0;
+    color: rgb(4, 39, 40);
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 #5a635a7d;
+    display: none;
+    /* hide the button by default */
+    transition: all 0.3s ease-in-out;
+  }
+
+  #backToTop:hover {
+    background-color: #4CAF50;
+  }
+
+  /* We can add CSS styles for the copyButton class to give it a desired appearance */
+  .copyButton {
+    background-color: #85ba88c0;
+    color: rgb(79, 129, 130);
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    margin-left: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 8px 0 #5a635a7d;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .copyButton:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  .successMessage {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .helpButton {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background-color: #85ba88c0;
+    color: rgb(4, 39, 40);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 2px 8px;
+    box-shadow: 0 0 8px 0 #5a635a7d;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .helpButton:hover {
+    background-color: #4caf9b;
+    color: white;
+  }
+
+  .helpButton:before {
+    content: "☞";
+    font-size: 25px;
+    margin-right: 5px;
+  }
+
+  #help {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    background-color: #04aa6dbd;
+    line-height: 2;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0 0 10px 0 #2ba12bb3;
+    border-radius: 12px;
+    transition: all .3s ease-in-out;
+    display: none;
+  }
+
+  #help:hover {
+    box-shadow: 0 0 15px;
+  }
+
+
+  #help span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgray;
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 8px 0 #5a635a7d;
+  }
+
+  #help span:hover {
+    background-color: #4666a6;
+    color: white;
+  }
+</style>
+
+</head>
+
 <body>
 
-<!-- A cool search box with a button -->
-<div style="display: flex; justify-content: center;">
-  <input type="text" placeholder="Search...">
-  <button style="background-color: #4CAF50; color: white; border: none; padding: 10px 20px; margin-left: 10px; border-radius: 5px;">Search</button>
-</div>
-<!-- Here we can add a list of sample data for testing the search functionality -->
-<ul>
-  <li>yong</li>
-  <li>yongming</li>
-  <li>yonghong</li>
-  <li>yongjian</li>
-  <li>yongqi</li>
-</ul>
+  <!-- A cool search box with a button -->
+  <div class="searchbar">
+    <div class="dropdown">
+      <button id="dataSelect" value="data">data11</button>
+      <div class="dropdown-content">
+        <p value="data2">Link 1</p>
+        <p>Link 2</p>
+        <p>Link 3</p>
+      </div>
+    </div>
+    <input type="text" placeholder="Search..." id="searchBox" onkeyup="if(event.keyCode==13) search()">
+    <button class="helpButton" onclick="showHelp()">Help</button>
+
+  </div>
+  <div id="help">
+    <span class="closeButton" onclick="hideHelp()">X</span>
+    <h2>😀 欢迎使用文件索引系统，以下为系统使用指南：</h2>
+    <ul>
+      <li>点击下拉按钮选择要搜索的数据源</li>
+      <li>在搜索框中输入需要搜索的关键词并按 Enter 键进行查询</li>
+      <li>搜索框支持多关键词搜索，关键词之间可用空格隔开</li>
+      <li>搜索结果将显示在下面的列表中</li>
+      <li>单击文件名以在新标签页中打开它，支持的文件类型为：.png/.jpg/.jepg/.pdf/.html/.txt</li>
+      <li>直接点击.pptx/.docs/.xlsx等文件，浏览器将会进行下载查看</li>
+      <li>如需打开.pptx/.docs/.xlsx等本地源文件，请单击文件名旁边的“复制”按钮以将其 URL 复制到剪贴板。</li>
+      <li>或直接将复制的 URL 粘贴至运行框，确认运行即可打开本地源文件，运行框调用快捷键：WIN+R</li>
+      <li>快捷键："/"可快速定位搜索框，"ESC"可清空当前搜索框中内容</li>
+
+    </ul>
+  </div>
+  <!-- Here we can add a list of sample data for testing the search functionality -->
+  <ul id="list"></ul>
+
+  <!-- Added code starts here -->
+  <div id="backToTop" onclick="scrollToTop()">
+    <i class="fa fa-arrow-up"></i>
+  </div>
+
 
 </body>
+
+<script src="data.js"></script>
+<script src="data2.js"></script>
+
+<script>
+
+  function changeData() {
+    const select = document.getElementById("dataSelect");
+    const value = select.value;
+    if (value === "data") {
+      currentData = data;
+    } else if (value === "data2") {
+      currentData = data2;
+    }
+    updateList();
+  }
+
+  changeData();
+
+  function updateList() {
+    list.innerHTML = "";
+    currentData.forEach((item) => {
+      const a = `<a href='${item}' target="_blank">${item}</a><button class="copyButton" onclick="copyToClipboard('${item}')">Copy</button>`
+      const li = document.createElement("li");
+      li.innerHTML += a;
+      list.appendChild(li);
+    });
+  }
+
+  const pElements = document.querySelectorAll('#dataSelect + .dropdown-content p');
+  pElements.forEach((p) => {
+    p.addEventListener('click', () => {
+      const value = p.getAttribute('value');
+      const text = p.textContent;
+      const button = document.getElementById('dataSelect');
+      button.setAttribute('value', value);
+      button.textContent = text;
+      changeData();
+      updateList();
+    });
+  });
+
+
+  function search() {
+    updateList();
+    let input = document.getElementById('searchBox').value.toLowerCase();
+    let items = list.getElementsByTagName('li');
+    let count = 0; // initialize count variable
+    for (let i = 0; i < items.length; i++) {
+      let text = items[i].textContent.toLowerCase();
+      let keywords = input.split(" ");
+      let flag = true;
+      if (text === "") {
+        updateList()
+      } else {
+        for (let j = 0; j < keywords.length; j++) {
+          if (!text.includes(keywords[j])) {
+            flag = false;
+            break;
+          }
+        }
+      }
+      if (flag) {
+        items[i].style.display = 'block';
+        count++; // increment count for each matching item
+        // Highlight matching keywords
+        let regex = new RegExp(keywords.join("|"), "gi");
+        let a = items[i].querySelector('a');
+        if (a) {
+          let href = a.getAttribute('href');
+          let newA = document.createElement('a');
+          newA.href = href;
+          newA.target = '_blank';
+          newA.innerHTML = a.innerHTML.replace(regex, (match) => `<span class="highlight">${match}</span>`);
+          items[i].innerHTML = newA.outerHTML + `<button class="copyButton" onclick="copyToClipboard('${a.innerHTML}')">Copy</button>`;
+        } else {
+          items[i].innerHTML = text.replace(regex, (match) => `<span class="highlight">${match}</span>`) + `<button class="copyButton" onclick="copyToClipboard('${text}')">Copy</button>`;
+        }
+      } else {
+        items[i].style.display = 'none';
+      }
+    }
+  }
+
+  function copyToClipboard(text) {
+    const el = document.createElement('textarea');
+    el.value = text;
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand('copy');
+    document.body.removeChild(el);
+    const successMessage = document.createElement('div');
+    successMessage.innerHTML = 'Copy successful!';
+    successMessage.classList.add('successMessage');
+    document.body.appendChild(successMessage);
+    setTimeout(() => {
+      document.body.removeChild(successMessage);
+    }, 1000);
+  }
+
+
+
+  // Add functionality to focus on search box when '/' is pressed
+  document.addEventListener('keydown', function (event) {
+    if (event.key === '/') {
+      event.preventDefault();
+      document.getElementById('searchBox').focus();
+    } else if (event.key === 'Escape') {
+      event.preventDefault();
+      document.getElementById('searchBox').value = '';
+    }
+  });
+
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
+  window.addEventListener("scroll", function () {
+    if (window.pageYOffset > 400) {
+      document.getElementById("backToTop").style.display = "block";
+    } else {
+      document.getElementById("backToTop").style.display = "none";
+    }
+  });
+
+  function showHelp() {
+    const help = document.getElementById("help");
+    help.style.display = "block";
+  }
+
+  function hideHelp() {
+    const help = document.getElementById("help");
+    help.style.display = "none";
+  }
+
+
+</script>
+
 </html>
