@@ -169,11 +169,11 @@
 </head>
 
 <body>
-    <!-- <a href="../index.html">
+    <a href="#">
         <div id="logo">
-            <img width="80px" src="../images/f_logo.svg" />
+            <img width="80px" src="./images/f_logo.svg" />
         </div>
-    </a> -->
+    </a>
 
     <div id="app">
         <div class="search-container">
@@ -229,7 +229,7 @@
             department: '',
             results: [],
             testData: testdata,
-            imgsrc:'../images/document.png',
+            imgsrc:'./images/document.png',
         },
         mounted() {
             this.$nextTick(() => {
@@ -251,7 +251,7 @@
                     !this.results.length > 0
                 ){
                     const nothing = this.$refs.nothing;
-                    this.imgsrc = '../images/nothing.png';
+                    this.imgsrc = './images/nothing.png';
                     nothing.innerHTML = "<h3>无搜索结果，请更换关键词进行重新搜索！</h3>"
                 }
             },
