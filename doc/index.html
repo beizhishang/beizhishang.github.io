@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- App Icons -->
+    <link rel="shortcut icon" href="../images/purification.ico" />
+    <title>SOP文件</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body::-webkit-scrollbar{
+            width:6px;
+        }
+        body::-webkit-scrollbar-thumb{
+            background-color:#2e6a7c;
+            border-radius: 10px;
+        }
+        body::-webkit-scrollbar-track{
+            background-color: rgb(182, 244, 255);
+        }
+
+        #logo {
+            z-index: 9999;
+            padding: 5px;
+            margin-top: 5px;
+            margin-left: 30px;
+            cursor: pointer;
+            transition: all .5s ease;
+            border-radius: 5px;
+            position: fixed;
+            top: 0;
+        }
+
+        #logo:hover {
+            box-shadow: 0 0 20px white;
+        }
+
+        #logo:active {
+            transform: translateY(6px);
+        }
+
+        .search-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 60px;
+            position: fixed;
+            top: 0;
+            background-color: #2e6a7c;
+            z-index: 100;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid white;
+        }
+
+        table {
+            table-layout: fixed;
+            width: 100%;
+        }
+
+        .head {
+            position: sticky;
+            top: 60px;
+            background-color: #2e6a7c !important;
+            color: white;
+        }
+
+        th,
+        td {
+            padding: 3px 8px;
+        }
+
+        tr:not(:first-child):hover {
+            color: darkblue;
+            font-weight: 900;
+        }
+
+        .results {
+            position: relative;
+            margin-top: 60px;
+        }
+
+        .doc,
+        .docnum {
+            cursor: pointer;
+        }
+
+        .doc:hover,
+        .docnum:hover {
+            background-color: pink;
+        }
+
+        input {
+            width: 20%;
+            height: 30px;
+            padding-left: 10px;
+            border-radius: 5px;
+            border: 1px solid green;
+        }
+
+        button {
+            width: 80px;
+            height: 30px;
+            border-radius: 5px;
+            border: none;
+            background-color: lightgray;
+            margin-left: 20px;
+            font-weight: 700;
+        }
+
+        button:hover {
+            background-color: rgb(182, 244, 255);
+        }
+
+        button:active {
+            transform: translateY(2px);
+        }
+
+        tr:nth-child(odd) {
+            background-color: rgba(165, 164, 164, 0.105);
+        }
+
+        tr:nth-child(even) {
+            background-color: rgb(182, 244, 255);
+        }
+
+        [v-cloak] {
+            display: none;
+        }
+
+        .show {
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .start {
+            margin-left: 20px;
+        }
+
+        div p,
+        div h2 {
+            line-height: 2;
+        }
+		
+		.show img{
+			width: 300px;
+		}
+		
+		.sum td{
+			height: 60px;
+			background-color: #2e6a7c;
+			font-size: 18px;
+			color: white;
+			text-align: center;
+			
+		}
+    </style>
+</head>
+
+<body>
+    <!-- <a href="../index.html">
+        <div id="logo">
+            <img width="80px" src="../images/f_logo.svg" />
+        </div>
+    </a> -->
+
+    <div id="app">
+        <div class="search-container">
+            <input type="text" v-model="keywords" placeholder="关键词" autofocus @keydown.enter="search" ref="myInput">
+            <button @click="search">搜索</button>
+        </div>
+
+        <table class="results" v-cloak v-if="results.length > 0" style="border-collapse:collapse;">
+            <tr class="head">
+                <th width="8%">生效日期</td>
+                <th width="5%">修订版本</td>
+                <th width="8%">文档编号</td>
+                <th width="30%">中文名称</td>
+                <th width="5%">L2文档类型</td>
+                <th width="5%">责任部门</td>
+                <th width="10%">作者</td>
+            </tr>
+            <tr v-for="result in results" :key="result['Document Number']">
+                <td>{{ result['Effective Date'] }}</td>
+                <td>{{ result['Revision'] }}</td>
+                <td class="docnum" @click="addHref">{{ result['Document Number'] }}</td>
+                <td class="doc" @click="addHref">{{ result['Document Chinese Name'] }}</td>
+                <td>{{ result['L2 Documet Type'] }}</td>
+                <td>{{ result['Responsible Department'] }}</td>
+                <td>{{ result['Author'] }}</td>
+            </tr>
+			
+			<tr class="sum">
+                <td colspan='7' v-if="results.length > 10">共 <b>{{ results.length }}</b> 条搜索结果，如需定位更精确的结果，请增加关键词进行搜索！</td> 
+                <td colspan='7' v-else>共 <b>{{ results.length }}</b> 条搜索结果，点击文件编码或文件名即可定位文件位置！</td> 
+            </tr>
+			
+        </table>
+        <div class="show" v-else>
+            <img ref="img" v-bind:src="imgsrc" />
+            <div class="start" ref="nothing">
+                <h2>发现、定位、高效搜索，从现在开始！</h2>
+                <p>可进行多关键词搜索，关键词之间只需用空格隔开</p>
+                <p>访问地址不可用时，可先登录E-DOC文件系统后再试</p>
+                <p>最新更新的文件不在列表，请单独进行搜索</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="documentData.js"></script>
+</body>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            keywords: '',
+            fileType: '',
+            department: '',
+            results: [],
+            testData: testdata,
+            imgsrc:'../images/document.png',
+        },
+        mounted() {
+            this.$nextTick(() => {
+                    this.$refs.myInput.focus();
+                });
+        },
+        methods: {
+
+            search() {
+                const keywordsArray = this.keywords.split(' ').filter(keyword => keyword !== '');
+				const regexArray = keywordsArray.map(keyword => new RegExp(keyword, 'i'));
+  
+				this.results = this.testData.filter(result => {
+					const combinedFields = `${result['Document Chinese Name']} ${result['Document Number']} ${result['Responsible Department']} ${result['Author']}`;
+					return regexArray.every(regex => regex.test(combinedFields));
+				});
+				
+                if(
+                    !this.results.length > 0
+                ){
+                    const nothing = this.$refs.nothing;
+                    this.imgsrc = '../images/nothing.png';
+                    nothing.innerHTML = "<h3>无搜索结果，请更换关键词进行重新搜索！</h3>"
+                }
+            },
+
+            addHref(e) {
+                const value = e.target.innerText;
+                e.target.style.backgroundColor = "#b6b9bb";
+                const address = "https://edocapp.innoventbio.com/otcs/cs.exe?slice=3142&searchbarwidgetmode=fulltext&where1=" + value + "&ScopeSelection=3142%7C2000%7C%E5%9C%A8+Enterprise+%E5%86%85&lookfor1=allwords&modifier1=relatedto&boolean2=And&lookfor2=complexquery&typeDropDownId=1&boolean3=And&lookfor3=complexquery&dateDropDownId=1&func=search&objType=258&SearchBarSearch=TRUE&location_id1=2000&facets=user&fulltextMode=allwords";
+                window.open(address);
+            },
+
+        },
+    });
+</script>
+
+</html>
