@@ -1,0 +1,5 @@
+.ui#js-ui
+  nav.scene_nav
+    ol.scene_nav_list
+      li.scene_nav_item(v-for="(params, index) in maxScene")
+        button.scene_nav_button(@click="scene = index" :class="{ 'o-active': scene === index }")

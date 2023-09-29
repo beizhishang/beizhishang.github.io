@@ -1,0 +1,357 @@
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: #F7ECEB;
+  margin: 0;
+  display: flex;
+  color: #545871;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.photo-field {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+.photo-field figure {
+  height: 50px;
+  width: 50px;
+  background-color: #545871;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+  color: #F7ECEB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu {
+  background-color: #545871;
+  height: 100vh;
+  overflow: hidden;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  color: #F7ECEB;
+  position: fixed;
+}
+
+.content {
+  flex: 1;
+  scroll-behavior: smooth;
+}
+
+.menu > .logo {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.menu > .logo img {
+  height: 50px;
+  width: 50px;
+  margin-right: 20px;
+}
+.menu > .logo h1 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.menu > .options {
+  display: flex;
+  margin-top: 100px;
+  height: 250px;
+}
+.menu > .options .secuence {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 50px;
+  position: relative;
+}
+.menu > .options .secuence .ball {
+  position: absolute;
+  background-color: #9597A6;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+.menu > .options .secuence::after {
+  position: absolute;
+  left: 50%;
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-color: #9597A6;
+}
+.menu > .options .secuence .mark {
+  position: absolute;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 8px solid #FFFFFF;
+  background-color: #545871;
+  box-sizing: border-box;
+  z-index: 10;
+  top: calc(0% - 6px);
+  transition: all 0.3s ease-in-out;
+}
+
+.menu > .options > .secuence > .ball:nth-child(2) {
+  top: 0px;
+}
+.menu > .options > .secuence > .ball:nth-child(3) {
+  top: 75px;
+}
+.menu > .options > .secuence > .ball:nth-child(4) {
+  top: 150px;
+}
+.menu > .options > .secuence > .ball:nth-child(5) {
+  top: 225px;
+}
+
+.menu > .options ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 50px;
+  font-size: 22px;
+  color: #9597A6;
+}
+.menu > .options ul li a {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.menu > .options ul li.selected a {
+  color: #F7ECEB;
+}
+
+.menu .image {
+  width: 500px;
+  height: 270px;
+  position: absolute;
+  bottom: 100px;
+  background-image: url("https://devartiral.com/codepen/doggo.png");
+  background-position: center;
+  background-size: cover;
+  filter: grayscale(100%) blur(1px);
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.content section {
+  height: 100vh;
+}
+
+.content {
+  margin-left: 500px;
+  padding: 100px;
+  width: calc(100vw - $menu-width);
+  overflow-x: hidden;
+}
+.content section h1 {
+  font-family: "Literata", serif;
+  font-size: 40px;
+  margin: 0;
+  text-align: center;
+}
+.content section h1:last-child {
+  margin-bottom: 50px;
+}
+.content section form {
+  display: flex;
+  flex-direction: column;
+}
+.content section form .row {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+.content section form .form-field {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-bottom: 10px;
+  margin-right: 40px;
+}
+.content section form .form-field label {
+  margin: 12px 0px;
+}
+.content section form .form-field input {
+  border-radius: 4px;
+  border: 1px solid #f0dbd9;
+  padding: 20px 16px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #bd6259;
+}
+
+.content > section > form > .row {
+  flex-wrap: wrap;
+}
+
+.content > section > form > .row:last-child > .form-field:not(.city) {
+  max-width: 100px;
+}
+
+.content > section > form > .row > .form-field.city {
+  flex: 2;
+}
+
+.card {
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  border: 1px solid #d9dae0;
+  padding: 30px;
+  color: #9597A6;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  padding-top: 0;
+}
+.card header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card header img {
+  border: 1px solid #daa7a2;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin-top: -40px;
+}
+.card header h2, .card header h3 {
+  margin: 0;
+}
+.card header h2 {
+  margin-top: 15px;
+  font-size: 30px;
+  font-family: "Literata", serif;
+  color: #545871;
+}
+.card header h3 {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+.card .card-content {
+  border-top: 1px solid #d9dae0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card .card-content h3 {
+  font-size: 12px;
+  padding-top: 15px;
+}
+.card .card-content ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+.card .card-content ul li {
+  background-color: #F7ECEB;
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 30px;
+}
+.card .info-box {
+  border-radius: 4px;
+  border: 1px solid #d9dae0;
+  display: flex;
+}
+.card .info-box .cell {
+  flex: 1;
+  border-right: 1px solid #d9dae0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+}
+.card .info-box .cell:last-child {
+  border: none;
+}
+.card .info-box .cell icon {
+  height: 40px;
+  width: 40px;
+  background-color: #F7ECEB;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card .info-box .cell label {
+  font-size: 11px;
+  font-weight: bold;
+}
+.card .info-box .cell label:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+section > footer {
+  text-align: center;
+}
+
+.selector {
+  background-color: #FFFFFF;
+  display: flex;
+  padding: 8px;
+}
+.selector .option {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  cursor: pointer;
+}
+.selector .option.selected {
+  background-color: #e8c9c7;
+}
+
+@media only screen and (max-width: 1300px) {
+  .menu {
+    width: 400px;
+  }
+
+  .content {
+    margin-left: 400px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .menu {
+    width: 300px;
+  }
+  .menu .logo {
+    flex-direction: column;
+  }
+  .menu .options ul li {
+    font-size: 16px;
+  }
+
+  .content {
+    margin-left: 300px;
+  }
+}

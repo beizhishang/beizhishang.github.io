@@ -902,6 +902,13 @@ const data = [
         "url": "https://99designs.com/",
         "tag": "design"
     },
+    {
+        "logo": "https://www.modyfi.com/favicon.ico",
+        "name": "Modyfi",
+        "description": "Modyfi is a website that connects businesses with freelancers to get work done.",
+        "url": "https://www.modyfi.com/",
+        "tag": "AI design"
+    },
 
 
 ];

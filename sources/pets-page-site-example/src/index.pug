@@ -1,0 +1,155 @@
+//https://dribbble.com/shots/4463832-Pawtastic-Dashboard-Screen/attachments/1012575?mode=media
+.menu
+  .logo
+    img(src="https://devartiral.com/codepen/pawntastic.png")
+    h1="PAWNTASTIC"
+  .options
+    .secuence
+      .mark
+      .ball
+      .ball
+      .ball
+      .ball
+      .bar
+    ul
+      li.selected
+        a(href="#step1")="Human profile"
+      li
+        a(href="#step2")="Pet basics"
+      li
+        a(href="#step3")="Pet details"
+      li
+        a(href="#step4")="Confirm"
+  .image
+.content
+  section#step1
+    h1="Hello! Please tell us a little bit about yourself."
+    form
+      .row
+        .form-field
+          label="First name"
+          input(type="text" placeholder="Your first name")
+        .form-field
+          label="Last name"
+          input(type="text" placeholder="Your last name")
+      .row
+        .form-field
+          label="Phone"
+          input(type="tel" placeholder="000-000-0000")
+        .form-field
+          label="Phone alt"
+          input(type="tel" placeholder="000-000-0000")
+      .form-field
+        label="Street address"
+        input(type="text" placeholder="Your street address")
+      .row
+        .form-field.city
+          label="City"
+          input(type="text" placeholder="City")
+        .form-field
+          label="State"
+          input(type="text" placeholder="FL")
+        .form-field
+          label="Zip"
+          input(type="text" placeholder="32789")
+  section#step2
+    h1="Yay, we love dogs! Give us the basics about your pup."
+    form
+      .row
+        .form-field
+          label="Name"
+          input(type="text" placeholder="Pet's name")
+        .form-field
+          label
+          .photo-field
+            figure.material-icons="photo_camera"
+            label="Upload photo"
+          
+      .row
+        .form-field
+          label="Breed"
+          input(type="text" placeholder="Pet's breed")
+        .form-field
+          label="Birthday"
+          input(type="date" placeholder="YYYY/MM/DD")
+      .row
+        .form-field
+          label="Gender"
+          .selector
+            .option.selected="Female"
+            .option="Male"
+        .form-field
+          label="Spayed or Neutered"
+          .selector
+            .option.selected="Yes"
+            .option="No"
+      .form-field
+          label="Weight"
+          .selector
+            .option.selected="0-25 lbs"
+            .option="25-50 lbs"
+            .option="50-100 lbs"
+            .option="100+ lbs"
+  section#step3
+    h1="Nice, time to know your pet in deep."
+    form
+      .form-field
+        label="Dietary Preferences"
+        .selector
+          .option.selected="Dry kibble"
+          .option="Wet food"
+          .option="Raw diet"
+          .option="Grain-free diet"
+      .form-field
+        label="Exercise and Activity Level"
+        .selector
+          .option.selected="Couch potato"
+          .option="Sports training"
+          .option="Specific exercise"
+      .form-field
+        label="Behavioral Traits"
+        .selector
+          .option.selected="Friendly"
+          .option="Shy"
+          .option="Territorial"
+          .option="Separation anxiety"
+      .form-field
+        label="Grooming needs"
+        input(type="text" placeholder="Grooming needs")
+      .form-field
+        label="Favorite Toys or Activities"
+        input(type="text" placeholder="Favorite Toys or Activities")
+  section#step4
+    h1="Okay, Ginger's all set!"
+    h1="We can't wait to meet her"
+    .card
+      header
+        img(src="https://devartiral.com/codepen/golden.png")
+        h2="Ginger"
+        h3="Golden Retriever"
+      .card-content
+        h3="FAVORITE THINGS"
+        ul
+          li="Barking"
+          li="Snuggling"
+          li="Giving kisses"
+          li="Walks"
+          li="Treats"
+      .info-box
+        .cell
+          icon.material-icons="female"
+          label="FEMALE"
+        .cell
+          label="8"
+          label="YEARS OLD"
+        .cell
+          icon.material-icons="content_cut"
+          label="SPAYED"
+        .cell
+          label="50-100"
+          label="POUNDS"
+    footer
+      label
+        | Got more pets? Lucky you!
+        b
+          |  Add another pet profile

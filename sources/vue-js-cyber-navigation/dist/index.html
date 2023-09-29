@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Vue.js: Cyber Navigation</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Dosis'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="ui" id="js-ui">
+  <nav class="scene_nav">
+    <ol class="scene_nav_list">
+      <li class="scene_nav_item" v-for="(params, index) in maxScene">
+        <button class="scene_nav_button" @click="scene = index" :class="{ 'o-active': scene === index }"></button>
+      </li>
+    </ol>
+  </nav>
+</div>
+<!-- partial -->
+  <script src='https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.min.js'></script>
+<script src='//cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Itchy Tanuki</title>
+  <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body class="ng-cloak" ng-app="app" ng-controller="appController">
+	<div class="canvas" ng-style="{'background-color': color}">
+
+		<div class="dial"></div>
+		<div class="color-display" ng-class="setClasses(color, null, true)">
+
+			<div class="color-ring-outer">
+				<div class="color-ring" ng-style="setRingRotation()">
+					<div ng-repeat="c in shades track by $index" ng-style="setRotation($index)">
+						<div class="color-brick" tap="doIt(c)" ng-class="setClasses(c, color, false)" ng-style="{'backgroundColor': c}">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="color-info" ng-class="setClasses(tuner.hex, null, true)" ng-style="{'background': tuner.hex}">
+				<h1>{{tuner.hex}}</h1>
+				<div class="refresh" tap="doIt()"><i class="fa fa-refresh fa-3x fa-fw"></i></div>
+			</div>
+
+		</div>
+	</div>
+	<div class="panel">
+		<i class="love fa fa-heart fa-2x" ng-class="setClasses(tuner.hex, null, true)" ng-style="{'color': tuner.hex}"></i>
+		<textarea rows="1" readonly>https://codepen.io/jasesmith/full/pgdmdv{{color}}</textarea>
+		<a class="button" href="https://www.twitter.com/share?url=https://codepen.io/jasesmith/full/pgdmdv{{(color.replace('#', '%23'))}}" target="_blank" ng-class="setClasses(color, null, true)" ng-style="{'background': tuner.hex}">
+			<i class="fa fa-twitter-square fa-lg"></i> {{color}}
+		</a>
+	</div>
+</body>
+<!-- partial -->
+  <script src='//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js'></script>
+<script src='//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js'></script>
+<script src='//cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.6/hammer.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

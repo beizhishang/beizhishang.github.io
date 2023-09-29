@@ -1,0 +1,21 @@
+<!-- 
+autor: Marco Barría 
+https://twitter.com/marco_bf
+-->
+
+<div class="container-fluid">
+  <div id="content" class="row"></div>
+</div>
+
+<script id="template" type="text/x-handlebars-template">
+  {{#gallery}}
+    <div class="col-md-4 col-lg-3 col-xs-6 item nopadding">
+      <div class="overflow">
+        <div class="content-art">
+          <h4>{{title}}</h4>
+        </div>
+        <img src="{{img}}" alt="{{alt}}" class="img-responsive"/>
+      </div>
+    </div>
+  {{/gallery}}
+</script>
