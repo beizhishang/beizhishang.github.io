@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.drag {
+  width: min(400px,90vw);
+  font: 100 0.85rem poppins,helvetica,sans-serif;
+  color: rgba(0,0,0,0.85);
+  border: 0.5px solid rgba(0,0,0,0.5);
+  border-radius: 0.25rem;
+  padding: 1rem;
+}
+
+.drag-item {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 0.5px solid rgba(0,0,0,0.5);
+  border-radius: 0.25rem;
+  margin: 0.5rem 0;
+  padding: 0.75rem 1rem;
+  background-color: white;
+  cursor: grab;
+}
+
+.drag-details {
+  display: flex;
+  align-items: center;
+}
+
+.drag-img {
+  width: 3.25rem;
+  height: 3.25rem;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 1rem;
+  pointer-events: none;
+}
+
+.drag-icon {
+  font-size: 1rem;
+  color: rgba(0,0,0,0.5)
+}
+
+.active :where(.drag-details, .drag-icon) { opacity: 0; }
+.grabbing { cursor: grabbing; }

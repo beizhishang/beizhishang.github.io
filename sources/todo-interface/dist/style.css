@@ -1,0 +1,282 @@
+* {
+	 box-sizing: border-box;
+}
+ body {
+	 background: #33363d;
+	 color: white;
+	 font-family: 'Lato';
+	 font-weight: 300;
+	 line-height: 1.5;
+	 -webkit-font-smoothing: antialiased;
+}
+ ul {
+	 list-style-type: none;
+	 margin: 0;
+	 padding: 0;
+}
+ .drag-container {
+	 max-width: 1000px;
+	 margin: 20px auto;
+}
+ .drag-list {
+	 display: flex;
+	 align-items: flex-start;
+}
+ @media (max-width: 690px) {
+	 .drag-list {
+		 display: block;
+	}
+}
+ .drag-column {
+	 flex: 1;
+	 margin: 0 10px;
+	 position: relative;
+	 background: #c4c4c4;
+	 overflow: hidden;
+   border-radius: 5px;
+}
+ @media (max-width: 690px) {
+	 .drag-column {
+		 margin-bottom: 30px;
+	}
+}
+ .drag-column h2 {
+	 font-size: 0.8rem;
+	 margin: 0;
+	 text-transform: uppercase;
+	 font-weight: 600;
+}
+ .drag-column-on-hold .drag-column-header, .drag-column-on-hold .is-moved, .drag-column-on-hold .drag-options {
+	 background: #fb7d44;
+}
+/*TODO*/
+ .drag-column-in-progress .drag-column-header, .drag-column-in-progress .is-moved, .drag-column-in-progress .drag-options {
+	padding: 12px 24px;
+  margin: 0 0 1em 0;
+  width: 100%;
+  vertical-align: middle;
+  color: #004345;
+  font-size: 16px;
+  line-height: 20px;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  letter-spacing: 1px;
+  background: #fafafa;
+  border: 2px solid #004345;
+  border-bottom: 2px solid #004345;
+  cursor: pointer;
+  border-radius: 5px;
+}
+ .drag-column-needs-review .drag-column-header, .drag-column-needs-review .is-moved, .drag-column-needs-review .drag-options {
+	padding: 12px 24px;
+  margin: 0 0 1em 0;
+  width: 100%;
+  vertical-align: middle;
+  color: #8c8a00;
+  font-size: 16px;
+  line-height: 20px;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  letter-spacing: 1px;
+  background: #fafafa;
+  border: 2px solid #8c8a00;
+  border-bottom: 2px solid #8c8a00;
+  cursor: pointer;
+  border-radius: 5px;
+}
+ .drag-column-approved .drag-column-header, .drag-column-approved .is-moved, .drag-column-approved .drag-options {
+  padding: 12px 24px;
+  margin: 0 0 1em 0;
+  width: 100%;
+  vertical-align: middle;
+  color: #7a0004;
+  font-size: 16px;
+  line-height: 20px;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  letter-spacing: 1px;
+  background: #fafafa;
+  border: 2px solid #7a0004;
+  border-bottom: 2px solid #7a0004;
+  cursor: pointer;
+  border-radius: 5px;
+}
+ .drag-column-header {
+	 display: flex;
+	 align-items: center;
+	 justify-content: space-between;
+	 padding: 10px;
+}
+ .drag-inner-list {
+	 min-height: 50px;
+}
+ .drag-item {
+	 margin: 10px;
+   min-height: 100px;
+	 max-height: 300px;
+	 background: #f2f2f2;
+   border-radius: 5px;
+	 transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+   color: #424242;
+   padding: 10px;
+   overflow: auto;
+}
+ .drag-item.is-moving {
+	 transform: scale(1.1);
+	 background: #d1d1d1;
+}
+ .drag-header-more {
+	 cursor: pointer;
+}
+ .dropdown-toggle{
+	 cursor: pointer;
+   border-radius:5px;
+   float: right;
+   display: inline-block;
+   vertical-align: top;
+  font-size: 10px;
+}
+ .drag-options {
+	 position: absolute;
+	 top: 44px;
+	 left: 0;
+	 width: 100%;
+	 height: 100%;
+	 padding: 10px;
+	 transform: translateX(100%);
+	 opacity: 0;
+	 transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+ .drag-options.active {
+	 transform: translateX(0);
+	 opacity: 1;
+}
+ .drag-options-label {
+	 display: block;
+	 margin: 0 0 5px 0;
+}
+ .drag-options-label input {
+	 opacity: 0.6;
+}
+ .drag-options-label span {
+	 display: inline-block;
+	 font-size: 0.9rem;
+	 font-weight: 400;
+	 margin-left: 5px;
+}
+.drag-title{
+  font-weight: 700;
+  text-decoration: underline;
+  margin-bottom:0%;
+  margin-top: 0%;
+}
+.drag-time{
+  color: #9e9e9e;
+  margin-bottom:0%;
+  margin-top: 0%;
+  font-size: 0.8rem;
+  
+}
+/* Dragula CSS */
+ .gu-mirror {
+	 position: fixed !important;
+	 margin: 0 !important;
+	 z-index: 9999 !important;
+	 opacity: 0.8;
+	 list-style-type: none;
+}
+ .gu-hide {
+	 display: none !important;
+}
+ .gu-unselectable {
+	 -webkit-user-select: none !important;
+	 -moz-user-select: none !important;
+	 -ms-user-select: none !important;
+	 user-select: none !important;
+}
+ .gu-transit {
+	 opacity: 0.2;
+}
+/* Demo info */
+ .section {
+	 padding: 20px;
+	 text-align: center;
+}
+ .section a {
+	 color: white;
+	 text-decoration: none;
+	 font-weight: 300;
+}
+ .section h4 {
+	 font-weight: 400;
+}
+ .section h4 a {
+	 font-weight: 600;
+}
+ 
+
+/* Begining of websites */
+
+
+* { box-sizing:border-box; }
+
+body {
+	font-family: Helvetica;
+	background: #eee;
+  -webkit-font-smoothing: antialiased;
+}
+
+hgroup { 
+	text-align:center;
+	margin-top: 4em;
+}
+
+h1, h3 { font-weight: 300; }
+
+h1 { color: #004345; }
+
+h3 { color: #004345; }
+
+
+/*scroll bar!*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.addDrag {
+	box-shadow: -3px 2px 3px 0px #3d752d;
+	background-color:#44c767;
+	border-radius:42px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:28px;
+	padding:13px 19px;
+	text-decoration:none;
+	text-shadow:-2px 2px 0px #2f6627;
+}
+.addDrag:hover {
+	background-color:#5cbf2a;
+}
+.addDrag:active {
+	position:relative;
+	top:1px;
+}
