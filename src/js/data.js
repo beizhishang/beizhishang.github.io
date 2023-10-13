@@ -31,14 +31,14 @@ const data = [
     },
 
     {
-        "logo": "https://z-lib.is/static/images/logo.png",
+        "logo": "https://z-lib.is/favicon-32x32.svg?v=2",
         "name": "Z-Library",
         "description": "Z-Library is one of the largest online libraries in the world that contains over 6,223,000 books and 80,646,000 articles. We aim to make literature accessible to everyone.",
         "url": "https://z-lib.is/",
         "tag": "library"
     },
     {
-        "logo": "https://cdn.resume.io/webapp/img/favicon/favicon-32x32.png",
+        "logo": "https://resume.io/assets/favicon/resume/favicon-370eedaf612a0ee315e4f32878253e4e0f900ff318654809a96e9a06db77d1af.ico",
         "name": "Resume.io",
         "description": "Resume.io is a platform for creating professional resumes and cover letters with ease.",
         "url": "https://resume.io/",
@@ -59,7 +59,7 @@ const data = [
         "tag": "presentation"
     },
     {
-        "logo": "https://beta.tome.app/assets/static/favicon.ac8d93a.6464fe3dc7e2025075554128c6c2c094.png",
+        "logo": "https://tome.app/_m/favicon.ico",
         "name": "Tome",
         "description": "Tome is a platform for writers to create, share, and discover stories.",
         "url": "https://beta.tome.app/",
@@ -73,7 +73,7 @@ const data = [
         "tag": "chatbot"
     },
     {
-        "logo": "https://www.prezo.ai/_nuxt/img/prezo.8d94ba8.svg",
+        "logo": "https://www.prezo.ai/logo-only.png",
         "name": "Prezo",
         "description": "Prezo is a platform for creating and sharing interactive presentations with AI-powered features.",
         "url": "https://prezo.ai",
@@ -141,13 +141,6 @@ const data = [
         "name": "Zhejiang Library",
         "description": "Zhejiang Library is a public library located in Hangzhou, China. It provides various resources and services to the public.",
         "url": "https://www.zjlib.cn/",
-        "tag": "library"
-    },
-    {
-        "logo": "https://www.zlibrary.io/favicon.ico",
-        "name": "Z-Library",
-        "description": "Z-Library is one of the largest online libraries in the world that contains over 6,223,000 books and 80,646,000 articles. We aim to make literature accessible to everyone.",
-        "url": "https://www.zlibrary.io/",
         "tag": "library"
     },
     {
@@ -280,7 +273,7 @@ const data = [
         "tag": "color"
     },
     {
-        "logo": "./images/icon/coolors.png",
+        "logo": "https://coolors.co/assets/img/favicon.png",
         "name": "Coolors",
         "description": "The super fast color schemes generator! Generate or browse beautiful color combinations for your designs.",
         "url": "https://coolors.co/",
@@ -350,7 +343,7 @@ const data = [
         "tag": "AI"
     },
     {
-        "logo": "https://www.anaconda.com/assets/build/favicons/favicon-32x32-20c6665c85.png",
+        "logo": "https://www.anaconda.com/wp-content/themes/berg-theme-child/assets/images/favicon/android-icon-192x192.png",
         "name": "Anaconda",
         "description": "The World's Most Popular Data Science Platform. Anaconda is the birthplace of Python data science.",
         "url": "https://www.anaconda.com/",
@@ -937,6 +930,63 @@ const data = [
         "url": "https://www.rapidpages.io/new",
         "tag": "tool AI web design"
     },
+    {
+        "logo": "https://uiverse.io/favicon.ico",
+        "name": "Uiverse",
+        "description": "Uiverse is a website that provides a platform for creating and hosting websites quickly and easily.",
+        "url": "https://uiverse.io/",
+        "tag": "tool AI web design"
+    },
+    {
+        "logo": "https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.22/vanta.net.min.js",
+        "name": "Vanta.js",
+        "description": "Vanta.js is a lightweight 3D animation library that provides a variety of effects for web pages.",
+        "url": "https://www.vantajs.com/",
+        "tag": "tool animation"
+    },
+    {
+        "logo": "https://godly.website/favicon.ico",
+        "name": "Godly",
+        "description": "Godly is a website that provides resources for web development and design.",
+        "url": "https://godly.website/",
+        "tag": "web development design"
+    },
+    {
+        "logo": "https://webflow.com/favicon.ico",
+        "name": "Webflow",
+        "description": "Webflow is a website that provides a platform for creating and hosting websites quickly and easily.",
+        "url": "https://webflow.com/",
+        "tag": "tool web design"
+    },
+    {
+        "logo": "https://docsgpt.ai/favicon.ico",
+        "name": "DocsGPT",
+        "description": "DocsGPT is a website that provides AI-powered writing assistance for technical documents.",
+        "url": "https://docsgpt.ai/",
+        "tag": "tool AI writing"
+    },
+    {
+        "logo": "https://framerusercontent.com/modules/k9kHwjYUZbHPcAbnYb78/ATOUQ1UBD9cYYOkw3d9h/assets/KWDRAMQLGjoMFBAjNjoCFMP7XI.png",
+        "name": "Dify",
+        "description": "Dify is a website that provides AI-powered design assistance for web pages.",
+        "url": "https://dify.ai/",
+        "tag": "AI"
+    },
+    {
+        "logo": "https://meilisearch.com/favicon.ico",
+        "name": "MeiliSearch",
+        "description": "MeiliSearch is a powerful, fast, open-source, easy to use and deploy search engine.",
+        "url": "https://www.meilisearch.com/",
+        "tag": "tool search"
+    },
+    {
+        "logo": "https://manticoresearch.com/images/favicon_huef5b6b9b4667cfcb07efebc9f11841a5_5793_32x0_resize_box_3.png",
+        "name": "ManticoreSearch",
+        "description": "ManticoreSearch is a powerful, fast, open-source, easy to use and deploy search engine.",
+        "url": "https://manticoresearch.com/",
+        "tag": "tool search"
+    },
+
 
 
 ];
