@@ -16,14 +16,14 @@ const data = [
         "tag": "tool"
     },
     {
-        "logo": "https://framer.com/static/images/favicon-32x32.png",
+        "logo": "https://framerusercontent.com/images/3ydDYhTbVKKzF5xDzZpZKoMmc.png",
         "name": "Framer",
         "description": "Framer is a platform for creating interactive designs, prototypes, and animations with ease.",
         "url": "https://framer.com",
         "tag": "design"
     },
     {
-        "logo": "https://shapes.framer.website/favicon.ico",
+        "logo": "https://framerusercontent.com/modules/H5g1bOajjwdjIC4ibkHK/ARSral2CYOjlbDUlAksm/assets/jEA1jCtkCAcP72HTWGFiuvyFcu8.svg",
         "name": "Framer Shapes",
         "description": "Framer Shapes is a platform for creating and sharing design components and UI kits for Framer.",
         "url": "https://shapes.framer.website/",
@@ -909,6 +909,28 @@ const data = [
         "url": "https://www.modyfi.com/",
         "tag": "AI design"
     },
+    {
+        "logo": "https://www.mambaui.com/favicon.ico",
+        "name": "Mamba UI",
+        "description": "Mamba UI is a website that provides UI design resources and inspiration.",
+        "url": "https://www.mambaui.com/",
+        "tag": "design UI"
+    },
+    {
+        "logo": "https://static.figma.com/app/icon/1/favicon.ico",
+        "name": "Figma",
+        "description": "Figma is a website that provides UI design resources and collaboration tools.",
+        "url": "https://www.figma.com/",
+        "tag": "design UI"
+    },
+    {
+        "logo": "https://www.sketch.com/favicon.ico",
+        "name": "Sketch",
+        "description": "Sketch is a website that provides UI design resources and collaboration tools.",
+        "url": "https://www.sketch.com/",
+        "tag": "design UI"
+    },
 
 
 ];
+
