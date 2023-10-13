@@ -930,6 +930,13 @@ const data = [
         "url": "https://www.sketch.com/",
         "tag": "design UI"
     },
+    {
+        "logo": "https://www.rapidpages.io/favicon.ico",
+        "name": "RapidPages",
+        "description": "RapidPages is a website that provides a platform for creating and hosting websites quickly and easily.",
+        "url": "https://www.rapidpages.io/new",
+        "tag": "tool AI web design"
+    },
 
 
 ];
