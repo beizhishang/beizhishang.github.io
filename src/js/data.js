@@ -986,6 +986,27 @@ const data = [
         "url": "https://manticoresearch.com/",
         "tag": "tool search"
     },
+    {
+        "logo": "https://app.diagrams.net/favicon.ico",
+        "name": "Diagrams.net",
+        "description": "Diagrams.net is a free, open-source diagramming software that allows you to create and share diagrams online.",
+        "url": "https://app.diagrams.net/",
+        "tag": "tool diagram"
+    },
+    {
+        "logo": "https://imiaoban.com/favicon.ico",
+        "name": "Imiaoban",
+        "description": "Imiaoban is a website that provides resources for web development and design.",
+        "url": "https://imiaoban.com/",
+        "tag": "diagram design"
+    },
+    {
+        "logo": "https://boardmix.cn/favicon.ico",
+        "name": "Boardmix",
+        "description": "Boardmix is a website that provides resources for board game design and development.",
+        "url": "https://boardmix.cn/",
+        "tag": "design diagram"
+    },
 
 
 
