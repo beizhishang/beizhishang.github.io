@@ -22,8 +22,6 @@
         }
 
         .card {
-            display: flex;
-            flex-direction: row;
             align-items: center;
             margin: 5px;
             padding: 5px;
@@ -53,7 +51,7 @@
         @keyframes fadeIn {
             0% {
                 opacity: 0;
-                transform: translateY(-50px);
+                transform: translateY(-20px);
             }
 
             100% {
@@ -69,37 +67,21 @@
             object-fit: contain;
             height: 45px;
             width: 45px;
-            margin: 10px 10px 0 0;
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
             transition: all 0.3s ease;
         }
 
         .card h3 {
-            margin: 0;
-            font-size: 18px;
+            margin-left: 50px;
+            font-size: 16px;
             text-align: left;
             white-space: nowrap;
             overflow: hidden;
+            padding-top: 12px;
             text-overflow: ellipsis;
-
         }
 
-        .card p {
-            margin: 5px 0 0;
-            font-size: 14px;
-            color: #666;
-            text-align: left;
-            overflow: hidden;
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
-            text-overflow: ellipsis;
-            text-align: justify;
-            /* word-break: break-all; */
-            overflow-wrap: break-word;
-            word-break: break-word;
-            hyphens: auto;
-        }
+
 
         .cards-container {
             padding: 20px;
@@ -310,11 +292,7 @@
                         <a href="${item.url}" target="_blank">
                             <div class="card-content">
                                 <img src="./src/images/icon/logo.png" data-src="${item.logo}" alt="${item.name} logo" onerror="this.onerror=null;this.src='./images/icon/logo.png';">
-                                
-                                <div class="card-text">
-                                    <h3 class="card-title">${item.name}</h3>
-                                    <p>${item.description}</p>
-                                </div>
+                                <h3 class="card-title">${item.name}</h3>
                             </div>
                         </a>
                     </div>
@@ -363,10 +341,7 @@
                         <a href="${item.url}" target="_blank">
                             <div class="card-content">
                                 <img src="./src/images/icon/logo.png" data-src="${item.logo}" alt="${item.name} logo" onerror="this.onerror=null;this.src='./images/icon/logo.png';">
-                                <div class="card-text">
-                                    <h3 class="card-title">${item.name}</h3>
-                                    <p>${item.description}</p>
-                                </div>
+                                <h3 class="card-title">${item.name}</h3>
                             </div>
                         </a>
                     </div>
@@ -398,6 +373,7 @@
                     searchByKeywords("");
                 } else {
                     searchByKeywords(tag);
+
                 }
             });
             tags.appendChild(button);
