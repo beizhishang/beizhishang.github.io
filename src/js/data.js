@@ -57,7 +57,7 @@ const data = [
         "tag": "writing"
     },
     {
-        "logo": "./images/icon/chatba.png",
+        "logo": "https://www.chatba.com/assets/favicon.70d21d61.svg",
         "name": "chatBA",
         "url": "https://chatba.com",
         "tag": "chatbot"
@@ -78,12 +78,6 @@ const data = [
         "logo": "https://autoslide.com/wp-content/uploads/2022/10/Autoslide-logo-02-300x39-2-200x26.png",
         "name": "Autoslide",
         "url": "https://autoslide.com",
-        "tag": "presentation"
-    },
-    {
-        "logo": "https://presentai.io/favicon.ico",
-        "name": "PresentAI",
-        "url": "https://presentai.io",
         "tag": "presentation"
     },
     {
@@ -112,7 +106,7 @@ const data = [
         "tag": "social"
     },
     {
-        "logo": "./images/icon/leiapix.png",
+        "logo": "https://leiapix.com/favicon.ico",
         "name": "LeiaPix",
         "url": "https://leiapix.com",
         "tag": "photography"
@@ -129,13 +123,6 @@ const data = [
         "url": "https://www.ask.com/",
         "tag": "search"
     },
-
-    {
-        "logo": "https://debuild.app/favicon/favicon.ico",
-        "name": "Debuild",
-        "url": "https://debuild.co",
-        "tag": "developer"
-    },
     {
         "logo": "https://static.grammarly.com/assets/files/524adc79be04712e3a336059c2959e2e/favicon.ico",
         "name": "Grammarly",
@@ -146,12 +133,6 @@ const data = [
         "logo": "https://d16xvuom8mr9m8.cloudfront.net/favicons/favicon-32x32.png",
         "name": "Tabnine",
         "url": "https://www.tabnine.com/",
-        "tag": "developer"
-    },
-    {
-        "logo": "./images/icon/logo.png",
-        "name": "Omnkey",
-        "url": "https://omnkey.com",
         "tag": "developer"
     },
     {
@@ -301,7 +282,7 @@ const data = [
         "tag": "AI"
     },
     {
-        "logo": "./images/icon/logo.png",
+        "logo": "./src/images/icon/chatgpt.png",
         "name": "OpenAI",
         "url": "https://www.openai.com/",
         "tag": "AI"
@@ -313,7 +294,7 @@ const data = [
         "tag": "image"
     },
     {
-        "logo": "./images/icon/heart.png",
+        "logo": "https://www.istockphoto.com/favicon.ico",
         "name": "iStock",
         "url": "https://www.istockphoto.com/",
         "tag": "image"
@@ -439,7 +420,7 @@ const data = [
         "tag": "encyclopedia"
     },
     {
-        "logo": "https://www.britannica.com/favicon.ico",
+        "logo": "https://www.britannica.com/favicon.png",
         "name": "Encyclopedia Britannica",
         "url": "https://www.britannica.com/",
         "tag": "encyclopedia"
@@ -559,18 +540,6 @@ const data = [
         "tag": "conversion"
     },
     {
-        "logo": "https://www.iconfinder.com/icons/299087/earth_global_globe_internet_map_planet_world_icon",
-        "name": "Iconfinder",
-        "url": "https://www.iconfinder.com/",
-        "tag": "icon"
-    },
-    {
-        "logo": "https://www.flaticon.com/favicon.ico",
-        "name": "Flaticon",
-        "url": "https://www.flaticon.com/",
-        "tag": "icon"
-    },
-    {
         "logo": "https://www.iconarchive.com/favicon.ico",
         "name": "IconArchive",
         "url": "https://www.iconarchive.com/",
@@ -583,7 +552,7 @@ const data = [
         "tag": "icon"
     },
     {
-        "logo": "https://www.iconspedia.com/favicon.ico",
+        "logo": "https://duin9q2mqqbim.cloudfront.net/common/images/favicon.ico",
         "name": "Iconspedia",
         "url": "https://www.iconspedia.com/",
         "tag": "icon"
@@ -637,19 +606,13 @@ const data = [
         "tag": "design"
     },
     {
-        "logo": "https://www.flaticon.com/favicon.ico",
-        "name": "Flaticon",
-        "url": "https://www.flaticon.com/",
-        "tag": "icon"
-    },
-    {
         "logo": "https://maxst.icons8.com/vue-static/landings/primary-landings/favs/icons8_fav_32%C3%9732.png",
         "name": "Icons8",
         "url": "https://icons8.com/",
         "tag": "design"
     },
     {
-        "logo": "https://www.iconfinder.com/favicon.ico",
+        "logo": "./src/images/icon/iconfinder.png",
         "name": "IconFinder",
         "url": "https://www.iconfinder.com/",
         "tag": "icon"
@@ -769,7 +732,7 @@ const data = [
         "tag": "design"
     },
     {
-        "logo": "https://www.modyfi.com/favicon.ico",
+        "logo": "https://assets-global.website-files.com/642ae6699603ff49cd7d358b/642ae6699603ff0ed67d3692_favicon.ico",
         "name": "Modyfi",
         "url": "https://www.modyfi.com/",
         "tag": "AI design"
@@ -805,7 +768,7 @@ const data = [
         "tag": "tool AI web design"
     },
     {
-        "logo": "https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.22/vanta.net.min.js",
+        "logo": "https://www.vantajs.com/favicon.ico",
         "name": "Vanta.js",
         "url": "https://www.vantajs.com/",
         "tag": "tool animation"
@@ -853,13 +816,13 @@ const data = [
         "tag": "tool diagram"
     },
     {
-        "logo": "https://imiaoban.com/favicon.ico",
+        "logo": "https://static.imiaoban.com/img/imiaoban_icon_ico.ico",
         "name": "Imiaoban",
         "url": "https://imiaoban.com/",
         "tag": "diagram design"
     },
     {
-        "logo": "https://boardmix.cn/favicon.ico",
+        "logo": "https://cms.boardmix.cn/images/board.ico",
         "name": "Boardmix",
         "url": "https://boardmix.cn/",
         "tag": "design diagram"
@@ -878,7 +841,7 @@ const data = [
     },
     {
         "logo": "https://www.who.int/favicon.ico",
-        "name": "World Health Organization",
+        "name": "WHO",
         "url": "https://www.who.int/",
         "tag": "regulation"
     },
@@ -895,14 +858,14 @@ const data = [
         "tag": "regulation"
     },
     {
-        "logo": "https://bmcproc.biomedcentral.com/favicon.ico",
+        "logo": "https://bmcproc.biomedcentral.com/static/img/favicons/bmc/favicon-16x16-c241ac1a2f.png",
         "name": "BMC Proceedings",
         "url": "https://bmcproc.biomedcentral.com/",
         "tag": "regulation"
     },
     {
         "logo": "https://www.fda.gov/favicon.ico",
-        "name": "Food and Drug Administration",
+        "name": "FDA",
         "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents",
         "tag": "regulation"
     },
@@ -925,19 +888,19 @@ const data = [
         "tag": "book"
     },
     {
-        "logo": "https://www.pda.org/favicon.ico",
-        "name": "Parenteral Drug Association",
+        "logo": "https://www.pda.org/Sitefinity/WebsiteTemplates/2018-pda/App_Themes/2018-pda/Icons/apple-touch-icon-144x144-precomposed.png",
+        "name": "PDA",
         "url": "https://www.pda.org/",
         "tag": "regulation"
     },
     {
-        "logo": "https://www.frontiersin.org/favicon.ico",
+        "logo": "https://brand.frontiersin.org/m/ed3f9ce840a03d7/favicon_180-tenantFavicon-Frontiers.png",
         "name": "Frontiers in Medicine",
         "url": "https://www.frontiersin.org/journals/medicine",
         "tag": "regulation"
     },
     {
-        "logo": "https://www.genengnews.com/favicon.ico",
+        "logo": "./src/images/icon/gen.png",
         "name": "Genetic Engineering & Biotechnology News",
         "url": "https://www.genengnews.com/",
         "tag": "regulation"
@@ -1049,5 +1012,11 @@ const data = [
         "name": "Scopus",
         "url": "https://www.scopus.com/",
         "tag": "book"
-    }
+    },
+    {
+        "logo": "https://www.vondy.com/favicon.ico",
+        "name": "Vondy",
+        "url": "https://www.vondy.com/",
+        "tag": "ai"
+    },
 ]
