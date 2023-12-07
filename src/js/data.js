@@ -300,7 +300,7 @@ const data = [
         "tag": "image"
     },
     {
-        "logo": "./images/icon/robot.png",
+        "logo": "https://www.gettyimages.hk/favicon.ico",
         "name": "Getty Images",
         "url": "https://www.gettyimages.com/",
         "tag": "image"
@@ -582,9 +582,9 @@ const data = [
         "tag": "design"
     },
     {
-        "logo": "https://www.stablediffusion.com/favicon.ico",
-        "name": "Stable Diffusion",
-        "url": "https://www.stablediffusion.com/",
+        "logo": "https://runwayml.com/icons/apple-touch-icon.png",
+        "name": "RunwayML",
+        "url": "https://runwayml.com/",
         "tag": "design"
     },
     {
@@ -774,7 +774,7 @@ const data = [
         "tag": "tool animation"
     },
     {
-        "logo": "https://godly.website/favicon.ico",
+        "logo": "https://godly.website/favicon.png",
         "name": "Godly",
         "url": "https://godly.website/",
         "tag": "web development design"
@@ -840,7 +840,7 @@ const data = [
         "tag": "book"
     },
     {
-        "logo": "https://www.who.int/favicon.ico",
+        "logo": "./src/images/icon/who.png",
         "name": "WHO",
         "url": "https://www.who.int/",
         "tag": "regulation"
@@ -912,19 +912,19 @@ const data = [
         "tag": "regulation"
     },
     {
-        "logo": "https://www.clinicalleader.com/favicon.ico",
+        "logo": "./src/images/icon/clinicalleader.png",
         "name": "Clinical Leader",
         "url": "https://www.clinicalleader.com/",
         "tag": "regulation"
     },
     {
-        "logo": "https://www.pharmaceuticalonline.com/favicon.ico",
+        "logo": "./src/images/icon/pharmaceuticalonline.png",
         "name": "Pharmaceutical Online",
         "url": "https://www.pharmaceuticalonline.com/",
         "tag": "regulation"
     },
     {
-        "logo": "https://www.biosimilardevelopment.com/favicon.ico",
+        "logo": "./src/images/icon/biosimilardevelopment.png",
         "name": "Biosimilar Development",
         "url": "https://www.biosimilardevelopment.com/",
         "tag": "regulation"
@@ -996,7 +996,7 @@ const data = [
         "tag": "regulation"
     },
     {
-        "logo": "https://pubscholar.cn/favicon.ico",
+        "logo": "https://pubscholar.cn/static/favicon-wfn3fg.ico",
         "name": "PubScholar",
         "url": "https://pubscholar.cn/",
         "tag": "book"
@@ -1008,7 +1008,7 @@ const data = [
         "tag": "book"
     },
     {
-        "logo": "https://www.scopus.com/favicon.ico",
+        "logo": "./src/images/icon/scopus.png",
         "name": "Scopus",
         "url": "https://www.scopus.com/",
         "tag": "book"
@@ -1018,5 +1018,29 @@ const data = [
         "name": "Vondy",
         "url": "https://www.vondy.com/",
         "tag": "ai"
+    },
+    {
+        "logo": "https://ncbi.nlm.nih.gov/favicon.ico",
+        "name": "NCBI",
+        "url": "https://pubmed.ncbi.nlm.nih.gov",
+        "tag": "regulation"
+    },
+    {
+        "logo": "https://www.krea.ai/favicon.ico",
+        "name": "Krea",
+        "url": "https://www.krea.ai/",
+        "tag": "ai image"
+    },
+    {
+        "logo": "https://blackbox.ai",
+        "name": "BlackBox",
+        "url": "https://blackbox.ai",
+        "tag": "ai code"
+    },
+    {
+        "logo": "https://isqqw.com",
+        "name": "Isqqw",
+        "url": "https://isqqw.com",
+        "tag": "charts"
     },
 ]
