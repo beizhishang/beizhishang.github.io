@@ -1043,4 +1043,10 @@ const data = [
         "url": "https://isqqw.com",
         "tag": "charts"
     },
+    {
+        "logo": "https://superset.apache.org/favicon.ico",
+        "name": "Superset",
+        "url": "https://superset.apache.org/",
+        "tag": "charts"
+    },
 ]
