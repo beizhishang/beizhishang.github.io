@@ -1049,4 +1049,17 @@ const data = [
         "url": "https://superset.apache.org/",
         "tag": "charts"
     },
+    {
+        "logo": "https://v0.dev/favicon.ico",
+        "name": "V0 Dev",
+        "url": "https://v0.dev/",
+        "tag": "AI design"
+    },
+    {
+        "logo": "https://you.com/favicon/favicon-32x32.png",
+        "name": "You",
+        "url": "https://you.com",
+        "tag": "AI"
+    },
 ]
+
