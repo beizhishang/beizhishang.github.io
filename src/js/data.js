@@ -1061,5 +1061,18 @@ const data = [
         "url": "https://you.com",
         "tag": "AI"
     },
+    {
+        "logo": "https://kaggle.com/favicon.ico",
+        "name": "Kaggle",
+        "url": "https://www.kaggle.com/",
+        "tag": "data"
+    },
+    {
+        "logo": "https://julius.ai/favicon.ico",
+        "name": "Julius",
+        "url": "https://julius.ai",
+        "tag": "ai data"
+    },
+    
 ]
 
