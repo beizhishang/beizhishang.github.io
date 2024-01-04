@@ -1073,6 +1073,12 @@ const data = [
         "url": "https://julius.ai",
         "tag": "ai data"
     },
+    {
+        "logo": "https://sqliteonline.com/favicon.ico",
+        "name": "SQLite Online",
+        "url": "https://sqliteonline.com/@https://sqliteonline.com/",
+        "tag": "database"
+    },
     
 ]
 
