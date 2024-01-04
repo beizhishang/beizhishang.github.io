@@ -1079,6 +1079,24 @@ const data = [
         "url": "https://sqliteonline.com/@https://sqliteonline.com/",
         "tag": "database"
     },
-    
+    {
+        "logo": "https://vectorizer.ai/favicon.ico",
+        "name": "Vectorizer",
+        "url": "https://vectorizer.ai/",
+        "tag": "ai image"
+    },
+    {
+        "logo": "https://www.upscayl.org/favicon.ico",
+        "name": "Upscayl",
+        "url": "https://www.upscayl.org/",
+        "tag": "ai image"
+    },
+    {
+        "logo": "https://www.patterns.dev",
+        "name": "Patterns",
+        "url": "https://www.patterns.dev",
+        "tag": "web design"
+    },
+
 ]
 
