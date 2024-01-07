@@ -1097,6 +1097,12 @@ const data = [
         "url": "https://www.patterns.dev",
         "tag": "web design"
     },
+    {
+        "logo": "https://www.elastic.co/",
+        "name": "Elastic",
+        "url": "https://www.elastic.co/",
+        "tag": "search data"
+    },
 
 ]
 
