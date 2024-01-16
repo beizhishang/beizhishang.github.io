@@ -1103,6 +1103,12 @@ const data = [
         "url": "https://www.elastic.co/",
         "tag": "search data"
     },
+    {
+        "logo": "https://www.perplexity.ai/favicon.ico",
+        "name": "Perplexity",
+        "url": "https://www.perplexity.ai/",
+        "tag": "ai"
+    },
 
 ]
 
