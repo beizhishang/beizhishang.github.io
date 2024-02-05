@@ -1109,6 +1109,12 @@ const data = [
         "url": "https://www.perplexity.ai/",
         "tag": "ai"
     },
+    {
+        "logo": "https://quickref.me/favicon.ico",
+        "name": "QuickRef",
+        "url": "https://quickref.me/index.html",
+        "tag": "code"
+    },
 
 ]
 
