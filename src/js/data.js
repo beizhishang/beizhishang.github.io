@@ -1115,6 +1115,12 @@ const data = [
         "url": "https://quickref.me/index.html",
         "tag": "code"
     },
+    {
+        "logo": "https://explorer.globe.engineer/favicon.png",
+        "name": "Globe Explorer",
+        "url": "https://explorer.globe.engineer",
+        "tag": "explorer"
+    },
 
 ]
 
