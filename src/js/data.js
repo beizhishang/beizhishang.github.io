@@ -1121,6 +1121,12 @@ const data = [
         "url": "https://explorer.globe.engineer",
         "tag": "explorer"
     },
+    {
+        "logo": "https://www.coze.com/favicon.ico",
+        "name": "Coze",
+        "url": "https://www.coze.com/",
+        "tag": "AI"
+    },
 
 ]
 
