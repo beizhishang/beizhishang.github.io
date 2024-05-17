@@ -178,7 +178,6 @@ const data = [
         "url": "https://www.notion.so",
         "tag": "productivity"
     },
-
     {
         "logo": "https://www.trello.com/favicon.ico",
         "name": "Trello",
@@ -1126,6 +1125,12 @@ const data = [
         "name": "Coze",
         "url": "https://www.coze.com/",
         "tag": "AI"
+    },
+    {
+        "logo": "https://uiverse.io/favicon.ico",
+        "name": "Uiverse",
+        "url": "https://uiverse.io/",
+        "tag": "design"
     },
 
 ]
