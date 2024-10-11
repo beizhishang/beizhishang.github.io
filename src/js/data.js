@@ -1121,7 +1121,7 @@ const data = [
         "tag": "explorer"
     },
     {
-        "logo": "https://www.coze.com/favicon.ico",
+        "logo": "https://sf-coze-web-cdn.coze.com/obj/coze-web-sg/obric/coze/favicon.1970.png",
         "name": "Coze",
         "url": "https://www.coze.com/",
         "tag": "AI"
@@ -1133,7 +1133,7 @@ const data = [
         "tag": "design"
     },
     {
-        "logo": "https://bolt.new/favicon.ico",
+        "logo": "https://bolt.new/favicon.svg",
         "name": "Bolt",
         "url": "https://bolt.new/",
         "tag": "code AI"
