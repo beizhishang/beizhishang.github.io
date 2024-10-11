@@ -1132,6 +1132,12 @@ const data = [
         "url": "https://uiverse.io/",
         "tag": "design"
     },
+    {
+        "logo": "https://bolt.new/favicon.ico",
+        "name": "Bolt",
+        "url": "https://bolt.new/",
+        "tag": "code AI"
+    },
 
 ]
 
