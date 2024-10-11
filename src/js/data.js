@@ -1138,6 +1138,12 @@ const data = [
         "url": "https://bolt.new/",
         "tag": "code AI"
     },
+    {
+        "logo": "https://css-tricks.com/favicon.ico",
+        "name": "CSS-Tricks",
+        "url": "https://css-tricks.com/",
+        "tag": "web design css"
+    },
 
 ]
 
