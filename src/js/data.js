@@ -1144,6 +1144,12 @@ const data = [
         "url": "https://css-tricks.com/",
         "tag": "web design css"
     },
+    {
+        "logo": "https://www.flyonui.com/favicon.ico",
+        "name": "FlyonUI",
+        "url": "https://www.flyonui.com/",
+        "tag": "ui design"
+    },
 
 ]
 
