@@ -1,7 +1,7 @@
 const data = [
 
     {
-        "logo": "https://storyset.com/favicon-32x32.png",
+        "logo": "https://www.icon.horse/icon/storyset.com",
         "name": "Storyset",
         "url": "https://storyset.com",
         "tag": "image"
@@ -27,7 +27,7 @@ const data = [
     },
 
     {
-        "logo": "https://z-lib.is/favicon-32x32.svg?v=2",
+        "logo": "https://www.icon.horse/icon/z-lib.is",
         "name": "Z-Library",
         "url": "https://z-lib.is/",
         "tag": "library"
@@ -81,7 +81,7 @@ const data = [
         "tag": "presentation"
     },
     {
-        "logo": "https://www.powtoon.com/favicon.ico",
+        "logo": "https://www.icon.horse/icon/powtoon.com",
         "name": "Powtoon",
         "url": "https://www.powtoon.com",
         "tag": "presentation"

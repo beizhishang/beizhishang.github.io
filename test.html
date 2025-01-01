@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>炫酷登录页面</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* styles.css */
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+        }
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            z-index: -1;
+            animation: gradientAnimation 10s ease infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .login-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 300px;
+        }
+
+        .login-title {
+            font-size: 2rem;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .login-subtitle {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px 0;
+            font-size: 1rem;
+            color: white;
+            border: none;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+            outline: none;
+            background: transparent;
+            transition: border-color 0.3s ease;
+        }
+
+        .input-group input:focus {
+            border-bottom-color: #ff5722;
+        }
+
+        .input-group label {
+            position: absolute;
+            top: 10px;
+            left: 0;
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.7);
+            pointer-events: none;
+            transition: all 0.3s ease;
+        }
+
+        .input-group input:focus~label,
+        .input-group input:not(:placeholder-shown)~label {
+            top: -10px;
+            font-size: 0.8rem;
+            color: #ff5722;
+        }
+
+        .input-highlight {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #ff5722;
+            transition: width 0.3s ease;
+        }
+
+        .input-group input:focus~.input-highlight {
+            width: 100%;
+        }
+
+        .login-button {
+            width: 100%;
+            padding: 12px;
+            font-size: 1rem;
+            color: white;
+            background: #ff5722;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .login-button:hover {
+            background: #e64a19;
+        }
+
+        .signup-link {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 15px;
+        }
+
+        .signup-link a {
+            color: #ff5722;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .signup-link a:hover {
+            color: #e64a19;
+        }
+
+        /* styles.css */
+        /* 之前的样式保持不变，新增以下内容 */
+
+        .error-message {
+            display: block;
+            font-size: 0.8rem;
+            color: #ff4444;
+            margin-top: 5px;
+            text-align: left;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .error-message.show {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="login-container">
+        <h1 class="login-title">欢迎回来</h1>
+        <p class="login-subtitle">请登录您的账户</p>
+        <form id="loginForm">
+            <div class="input-group">
+                <input type="text" id="username" required>
+                <label for="username">用户名</label>
+                <span class="input-highlight"></span>
+                <span class="error-message" id="usernameError"></span>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" required>
+                <label for="password">密码</label>
+                <span class="input-highlight"></span>
+                <span class="error-message" id="passwordError"></span>
+            </div>
+            <button type="submit" class="login-button">登录</button>
+        </form>
+        <p class="signup-link">没有账户？<a href="#">立即注册</a></p>
+    </div>
+    <script>
+        // script.js
+        document.getElementById('loginForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // 阻止表单默认提交行为
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (username && password) {
+                alert(`欢迎回来，${username}！`);
+                // 这里可以添加实际的登录逻辑，比如发送请求到服务器
+            } else {
+                alert('请输入用户名和密码！');
+            }
+        });
+        // script.js
+        document.getElementById('loginForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // 阻止表单默认提交行为
+
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('password').value.trim();
+            const usernameError = document.getElementById('usernameError');
+            const passwordError = document.getElementById('passwordError');
+
+            let isValid = true;
+
+            // 用户名验证
+            if (username === '') {
+                usernameError.textContent = '用户名不能为空';
+                usernameError.classList.add('show');
+                isValid = false;
+            } else if (username.length < 4 || username.length > 16) {
+                usernameError.textContent = '用户名长度必须在4到16个字符之间';
+                usernameError.classList.add('show');
+                isValid = false;
+            } else {
+                usernameError.textContent = '';
+                usernameError.classList.remove('show');
+            }
+
+            // 密码验证
+            if (password === '') {
+                passwordError.textContent = '密码不能为空';
+                passwordError.classList.add('show');
+                isValid = false;
+            } else if (password.length < 6 || password.length > 20) {
+                passwordError.textContent = '密码长度必须在6到20个字符之间';
+                passwordError.classList.add('show');
+                isValid = false;
+            } else {
+                passwordError.textContent = '';
+                passwordError.classList.remove('show');
+            }
+
+            // 如果验证通过，执行登录逻辑
+            if (isValid) {
+                alert(`欢迎回来，${username}！`);
+                // 这里可以添加实际的登录逻辑，比如发送请求到服务器
+            }
+        });
+    </script>
+</body>
+
+</html>
