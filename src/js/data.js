@@ -1150,6 +1150,161 @@ const data = [
         "url": "https://www.flyonui.com/",
         "tag": "ui design"
     },
-
+    {
+        "logo": "https://huggingface.co/favicon.ico",
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/",
+        "tag": "AI machine-learning"
+    },
+    {
+        "logo": "https://huggingface.co/favicon.ico",
+        "name": "Hugging Face Chat",
+        "url": "https://huggingface.co/chat/",
+        "tag": "AI machine-learning chat"
+    },
+    {
+        "logo": "https://www.news-medical.net/favicon.ico",
+        "name": "News Medical",
+        "url": "https://www.news-medical.net/",
+        "tag": "medical news"
+    },
+    {
+        "logo": "https://www.fda.gov/themes/custom/fda/favicon.ico",
+        "name": "FDA（美国食品药品监督管理局）",
+        "url": "https://www.fda.gov/drugs",
+        "tag": "regulation"
+    },
+    {
+        "logo": "https://www.ema.europa.eu/sites/all/themes/ema/favicon.ico",
+        "name": "EMA（欧洲药品管理局）",
+        "url": "https://www.ema.europa.eu/en/human-regulatory",
+        "tag": "regulation"
+    },
+    {
+        "logo": "https://www.nmpa.gov.cn/favicon.ico",
+        "name": "NMPA（中国国家药监局）",
+        "url": "https://www.nmpa.gov.cn/",
+        "tag": "regulation"
+    },
+    {
+        "logo": "https://www.clinicaltrials.gov/favicon.ico",
+        "name": "ClinicalTrials.gov",
+        "url": "https://clinicaltrials.gov/",
+        "tag": "clinical"
+    },
+    {
+        "logo": "https://www.pharmcube.com/favicon.ico",
+        "name": "药融云Pharmcube",
+        "url": "https://www.pharmcube.com/",
+        "tag": "biopharma data"
+    },
+    {
+        "logo": "https://www.pharmnet.com.cn/favicon.ico",
+        "name": "中国医药网",
+        "url": "https://www.pharmnet.com.cn/",
+        "tag": "industry news"
+    },
+    {
+        "logo": "https://www.pharmadl.com/favicon.ico",
+        "name": "药渡经纬Pharmadl",
+        "url": "https://www.pharmadl.com/",
+        "tag": "biopharma data"
+    },
+    {
+        "logo": "https://www.pharmcube.com/favicon.ico",
+        "name": "药融圈",
+        "url": "https://www.pharmcube.com/circle",
+        "tag": "community"
+    },
+    {
+        "logo": "https://www.pharmchina.com.cn/favicon.ico",
+        "name": "全国药品交易会PharmChina",
+        "url": "https://www.pharmchina.com.cn/",
+        "tag": "conference"
+    },
+    {
+        "logo": "https://www.biocentury.com/favicon.ico",
+        "name": "BioCentury",
+        "url": "https://www.biocentury.com/",
+        "tag": "industry news"
+    },
+    {
+        "logo": "https://www.evaluate.com/themes/custom/evaluate/favicon.ico",
+        "name": "Evaluate Pharma",
+        "url": "https://www.evaluate.com/",
+        "tag": "market analysis"
+    },
+    {
+        "logo": "https://www.genengnews.com/favicon.ico",
+        "name": "GEN（Genetic Engineering & Biotechnology News）",
+        "url": "https://www.genengnews.com/",
+        "tag": "biotech news"
+    },
+    {
+        "logo": "https://www.nature.com/favicon.ico",
+        "name": "Nature Biotechnology",
+        "url": "https://www.nature.com/nbt/",
+        "tag": "journal"
+    },
+    {
+        "logo": "https://www.sciencedirect.com/favicon.ico",
+        "name": "ScienceDirect - Pharmaceutical Science",
+        "url": "https://www.sciencedirect.com/journal/european-journal-of-pharmaceutical-sciences",
+        "tag": "journal"
+    },
+    {
+        "logo": "https://www.pharmexec.com/favicon.ico",
+        "name": "Pharmaceutical Executive",
+        "url": "https://www.pharmexec.com/",
+        "tag": "industry news"
+    },
+    {
+        "logo": "https://www.pharmaboardroom.com/favicon.ico",
+        "name": "PharmaBoardroom",
+        "url": "https://pharmaboardroom.com/",
+        "tag": "market analysis"
+    },
+    {
+        "logo": "https://www.bioon.com/favicon.ico",
+        "name": "生物谷Bioon",
+        "url": "https://www.bioon.com/",
+        "tag": "biotech news"
+    },
+    {
+        "logo": "https://www.yaozh.com/favicon.ico",
+        "name": "药智网Yaozhi",
+        "url": "https://www.yaozh.com/",
+        "tag": "biopharma data"
+    },
+    {
+        "logo": "https://www.pharmcube.com/favicon.ico",
+        "name": "药融云数据中心",
+        "url": "https://db.pharmcube.com/",
+        "tag": "database"
+    },
+    {
+        "logo": "https://www.chinadrugtrials.org.cn/favicon.ico",
+        "name": "中国药物临床试验登记与信息公示平台",
+        "url": "http://www.chinadrugtrials.org.cn/",
+        "tag": "clinical"
+    },
+    {
+        "logo": "",
+        "name": "bioCloudHub",
+        "url": "./src/pages/bioCloudHub.html",
+        "tag": "wechat tool"
+    },
+    {
+        "logo": "",
+        "name": "BiotechHub",
+        "url": "./src/pages/BiotechHub.html",
+        "tag": "wechat tool"
+    },
+    {
+        "logo": "https://news.pda.org/favicon.ico",
+        "name": "PDA News",
+        "url": "https://news.pda.org/",
+        "tag": "regulatory news"
+    },
 ]
 
