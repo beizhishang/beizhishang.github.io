@@ -1306,5 +1306,11 @@ const data = [
         "url": "https://news.pda.org/",
         "tag": "regulatory news"
     },
+    {
+        "logo": "https://www.biopharminternational.com/favicon.ico",
+        "name": "BioPharm International",
+        "url": "https://www.biopharminternational.com/",
+        "tag": "industry insights"
+    },
 ]
 
