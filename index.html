@@ -1,385 +1,92 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Resources</title>
-    <meta charset="utf-8">
-    <link rel="shortcut icon" href="./src/images/icon/mab.ico" type="image/x-icon">
+    <meta charset="utf-8" />
+    <link
+      rel="shortcut icon"
+      href="./src/images/icon/mab.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./src/style/main.css" />
+  </head>
 
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            text-decoration: none;
-        }
-
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-image: url("./src/images/picture/food.png");
-            background-color: #428a78;
-        }
-
-        #logo {
-            width: 40px;
-            height: 40px;
-            margin-left: 20px;
-        }
-
-        #logo:hover{
-            filter:drop-shadow(0  0 10px white)
-        }
-
-        .card {
-            align-items: center;
-            margin: 5px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-            width: 20%;
-            height: auto;
-            transition: all 0.3s ease;
-        }
-
-        a:active {
-            color: black;
-        }
-
-        .card:hover,
-        button:hover {
-            transform: translateY(-5px);
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-        }
-
-        /* ADD ANIMATION EFFECTS TO SEARCH */
-        .card {
-            animation: fadeIn 1s ease-in-out;
-        }
-
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-                transform: translateY(-10px);
-            }
-
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .card-content {
-            width: 100%;
-            height: 45px;
-        }
-
-        .card img {
-            background-color: white;
-            float: left;
-            border-radius: 8px;
-            object-fit: contain;
-            height: 45px;
-            width: 45px;
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-            transition: all 0.3s ease;
-        }
-
-        .card h3 {
-            margin-left: 60px;
-            font-size: 16px;
-            text-align: left;
-            white-space: nowrap;
-            overflow: hidden;
-            padding-top: 12px;
-            text-overflow: ellipsis;
-        }
-
-        .cards-container {
-            padding: 20px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            margin-top: 40px;
-            max-width: 1200px;
-        }
-
-        .head-container {
-            width: 100%;
-            height: 55px;
-            justify-content: center;
-            align-items: center;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1;
-            background: url("src/images/picture/cubes.png") #2e4845;
-            transition: all 0.3s ease;
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-        }
-
-        .search-container {
-            display: flex;
-            margin: 10px 0;
-        }
-
-        .search-container input {
-            margin-left: 60px;
-            padding: 5px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            width: 68px;
-            height: 35px;
-        }
-
-        .tags-container {
-            display: flex;
-            align-items: center;
-            margin: 0 30px;
-            padding: 5px 0;
-            overflow-x: auto;
-            white-space: nowrap;
-        }
-
-        #tags::-webkit-scrollbar {
-            width: 0;
-        }
-
-        .tags-container button {
-            padding: 5px;
-            border-radius: 5px;
-            border: none;
-            background-color: #ccc;
-            color: darkblue;
-            margin-right: 10px;
-            margin-bottom: 5px;
-            cursor: pointer;
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-            transition: all 0.3s ease;
-
-        }
-
-        /* ADD ANIMATION EFFECTS TO SEARCH */
-        .search-container input:focus {
-            border-color: #000;
-            box-shadow: 0 0 5px #000;
-            transition: all 0.3s ease;
-            width: 300px;
-        }
-
-        .search-container input::placeholder {
-            color: #e4baba;
-            transition: all 0.3s ease;
-        }
-
-        .search-container input:focus::placeholder {
-            color: #000;
-            transition: all 0.3s ease;
-        }
-
-        .search-container input:focus+.reset-button {
-            display: block;
-        }
-
-        /* ADD KEYBOARD SHORTCUTS FOR SEARCH */
-        .shortcut {
-            margin-top: 20px;
-            font-size: 14px;
-            color: lightgray;
-        }
-
-        .shortcut span {
-            font-weight: bold;
-            color: white;
-        }
-
-        /* ADD ANIMATION EFFECTS TO SEARCH */
-        .search-container input:focus {
-            border-color: #000;
-            box-shadow: 0 0 5px #000;
-            transition: all 0.3s ease;
-        }
-
-        .search-container input::placeholder {
-            color: #ccc;
-            transition: all 0.3s ease;
-        }
-
-        .search-container input:focus::placeholder {
-            color: #000;
-            transition: all 0.3s ease;
-        }
-
-        footer {
-            height: 100px;
-        }
-    </style>
-</head>
-
-<body>
-    <div class="head-container">
+  <body>
+    <div id="app">
+      <div class="head-container">
         <div class="search-container">
-            <a href="https://beizhishang.github.io"><img id="logo" src="./src/images/icon/mab.png" alt="logo"></a>
-            <input type="search" placeholder="Search by name or tag" id="search-input">
-            <div class="tags-container" id="tags"></div>
+          <a href="https://beizhishang.github.io"
+            ><img id="logo" src="./src/images/icon/mab.png" alt="logo"
+          /></a>
+          <input
+            type="search"
+            placeholder="Search by name or tag"
+            id="search-input"
+            :value="searchKeyword"
+            @input="handleSearch"
+            ref="searchInputRef"
+          />
+          <div class="tags-container">
+            <button
+              v-for="tag in tagsList"
+              :key="tag"
+              :style="{ backgroundColor: getTagColor(tag) }"
+              @click="handleTagClick(tag)"
+            >
+              {{ tag }}
+            </button>
+          </div>
         </div>
+      </div>
+
+      <div class="cards-container">
+        <div
+          v-for="(item, index) in dataWithColors"
+          :key="item.url"
+          class="card"
+          :style="getCardStyle(item, index)"
+        >
+          <a :href="item.url" target="_blank">
+            <div class="card-content">
+              <img
+                src="./src/images/icon/logo.png"
+                :data-src="item.logo"
+                :alt="item.name + ' logo'"
+                @error="handleImageError"
+              />
+              <h3 class="card-title">{{ item.name }}</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="shortcut">
+        Press <span>Ctrl + F</span> to focus on search bar
+      </div>
+      <footer></footer>
     </div>
 
-    <div class="cards-container" id="cards"></div>
-    <div class="shortcut">Press <span>Ctrl + F</span> to focus on search bar</div>
-    <footer></footer>
+    <!-- Vue 3 CDN -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- Data -->
     <script src="./src/js/data.js"></script>
-
-    <script>
-
-        const cards = document.getElementById("cards");
-        const tags = document.getElementById("tags");
-        // Set focus on search input
-        // document.getElementById("search-input").focus();
-
-        function debounce(func, wait) {
-            let timeout;
-            return function executedFunction(...args) {
-                const later = () => {
-                    clearTimeout(timeout);
-                    func(...args);
-                };
-                clearTimeout(timeout);
-                timeout = setTimeout(later, wait);
-            };
-        }
-
-        function searchByKeywords(keywords) {
-            const keywordList = keywords.split(" ");
-            const filteredData = data.filter(item => {
-                for (let i = 0; i < keywordList.length; i++) {
-                    if (!item.name.toLowerCase().includes(keywordList[i].toLowerCase()) && !item.tag.toLowerCase().includes(keywordList[i].toLowerCase())) {
-                        return false;
-                    }
-                }
-                return true;
-            });
-            cards.innerHTML = "";
-            filteredData.forEach((item, index) => {
-                const card = `
-                    <div class="card" style="background-color: ${getRandomColor()}">
-                        <a href="${item.url}" target="_blank">
-                            <div class="card-content">
-                                <img src="./src/images/icon/logo.png" data-src="${item.logo}" alt="${item.name} logo" onerror="this.onerror=null;this.src='./src/images/icon/logo.png';">
-                                <h3 class="card-title">${item.name}</h3>
-                            </div>
-                        </a>
-                    </div>
-                `;
-                cards.innerHTML += card;
-            });
-            lazyLoad();
-        }
-
-
-        function getRandomColor() {
-            const colors = ["hsla(233, 100%, 90%, 1)", "hsla(234, 80%, 88%, 1)", "hsl(150deg 46% 71%)", "hsla(259, 84%, 78%, 1)", "hsla(311, 74%, 87%, 1)", "hsla(221, 59%, 75%, 1)", "hsla(312, 77%, 86%, 1)", "hsla(242, 58%, 73%, 1)", "hsla(311, 74%, 87%, 1)"];
-            color = colors[Math.floor(Math.random() * colors.length)];
-            return color;
-        }
-
-        function lazyLoad() {
-            const images = document.querySelectorAll("img[data-src]");
-            const options = {
-                rootMargin: "0px 0px 50px 0px",
-                threshold: 0
-            };
-            const observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const img = entry.target;
-                        const src = img.getAttribute("data-src");
-                        img.setAttribute("src", src);
-                        img.removeAttribute("data-src");
-                        observer.unobserve(img);
-                    }
-                });
-            }, options);
-            images.forEach(image => {
-                observer.observe(image);
-            });
-        }
-
-        data.forEach((item, index) => {
-            const card = `
-                    <div class="card" style="background-color: ${getRandomColor()}">
-                        <a href="${item.url}" target="_blank">
-                            <div class="card-content">
-                                <img src="./src/images/icon/logo.png" data-src="${item.logo}" alt="${item.name} logo" onerror="this.onerror=null;this.src='./images/icon/logo.png';">
-                                <h3 class="card-title">${item.name}</h3>
-                            </div>
-                        </a>
-                    </div>
-                `;
-            cards.innerHTML += card;
-        });
-
-        const searchInput = document.getElementById("search-input");
-        const debouncedSearch = debounce(() => {
-            searchByKeywords(searchInput.value);
-        }, 500);
-
-        searchInput.addEventListener("input", debouncedSearch);
-        const tagsList = [];
-        data.forEach(item => {
-            item.tag.split(" ").forEach(tag => {
-                if (!tagsList.includes(tag)) {
-                    tagsList.push(tag);
-                }
-            });
-        });
-        tagsList.unshift("All");
-        tagsList.forEach(tag => {
-            const button = document.createElement("button");
-            button.innerText = tag;
-            button.style.backgroundColor = getRandomColor();
-            button.addEventListener("click", () => {
-                if (tag === "All") {
-                    searchByKeywords("");
-                } else {
-                    searchByKeywords(tag);
-
-                }
-            });
-            tags.appendChild(button);
-        });
-
-        // ADD KEYBOARD SHORTCUTS FOR SEARCH
-        document.addEventListener("keydown", (event) => {
-            if ((event.ctrlKey || event.metaKey) && event.key === "f") {
-                event.preventDefault();
-                searchInput.focus();
-
-            }
-        });
-
-        lazyLoad();
-
-    </script>
+    <!-- Vue App -->
+    <script src="./src/js/app.js"></script>
 
     <!-- Chatra {literal} -->
     <script>
-        (function (d, w, c) {
-            w.ChatraID = 'vS4oXDBXEBLjkKQhd';
-            var s = d.createElement('script');
-            w[c] = w[c] || function () {
-                (w[c].q = w[c].q || []).push(arguments);
-            };
-            s.async = true;
-            s.src = 'https://call.chatra.io/chatra.js';
-            if (d.head) d.head.appendChild(s);
-        })(document, window, 'Chatra');
+      (function (d, w, c) {
+        w.ChatraID = "vS4oXDBXEBLjkKQhd";
+        var s = d.createElement("script");
+        w[c] =
+          w[c] ||
+          function () {
+            (w[c].q = w[c].q || []).push(arguments);
+          };
+        s.async = true;
+        s.src = "https://call.chatra.io/chatra.js";
+        if (d.head) d.head.appendChild(s);
+      })(document, window, "Chatra");
     </script>
     <!-- /Chatra {/literal} -->
-</body>
-
+  </body>
 </html>

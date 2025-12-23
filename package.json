@@ -18,5 +18,6 @@
   "homepage": "https://github.com/beizhishang/beizhishang.github.io#readme",
   "dependencies": {
     "astro": "^2.1.7"
-  }
+  },
+  "description": "Resources website built with Vue 3"
 }
