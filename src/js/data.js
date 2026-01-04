@@ -1312,5 +1312,204 @@ const data = [
         "url": "https://www.biopharminternational.com/",
         "tag": "industry insights"
     },
+    {
+        "logo": "https://www.bioinformatics.org/favicon.ico",
+        "name": "Bioinformatics.org",
+        "url": "https://www.bioinformatics.org/",
+        "tag": "bioinformatics tool"
+    },
+    {
+        "logo": "https://benchling.com/favicon.ico",
+        "name": "Benchling",
+        "url": "https://benchling.com/",
+        "tag": "lab management tool"
+    },
+    {
+        "logo": "https://www.uniprot.org/favicon.ico",
+        "name": "UniProt",
+        "url": "https://www.uniprot.org/",
+        "tag": "database protein"
+    },
+    {
+        "logo": "https://pubchem.ncbi.nlm.nih.gov/favicon.ico",
+        "name": "PubChem",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/",
+        "tag": "chemical database"
+    },
+    {
+        "logo": "https://www.rcsb.org/favicon.ico",
+        "name": "RCSB PDB",
+        "url": "https://www.rcsb.org/",
+        "tag": "protein structure database"
+    },
+    {
+        "logo": "https://www.snapgene.com/favicon.ico",
+        "name": "SnapGene Viewer",
+        "url": "https://www.snapgene.com/snapgene-viewer",
+        "tag": "dna tool"
+    },
+    {
+        "logo": "https://www.addgene.org/static/images/favicons/favicon.ico",
+        "name": "Addgene",
+        "url": "https://www.addgene.org/",
+        "tag": "plasmid repository"
+    },
+    {
+        "logo": "https://www.ncbi.nlm.nih.gov/favicon.ico",
+        "name": "NCBI BLAST",
+        "url": "https://blast.ncbi.nlm.nih.gov/Blast.cgi",
+        "tag": "bioinformatics tool"
+    },
+    {
+        "logo": "https://www.vectorbuilder.com/favicon.ico",
+        "name": "VectorBuilder",
+        "url": "https://www.vectorbuilder.com/",
+        "tag": "vector design tool"
+    },
+    {
+        "logo": "https://www.genome.jp/favicon.ico",
+        "name": "KEGG",
+        "url": "https://www.genome.jp/kegg/",
+        "tag": "database pathway"
+    },
+    {
+        "logo": "https://maayanlab.cloud/Enrichr/favicon.ico",
+        "name": "Enrichr",
+        "url": "https://maayanlab.cloud/Enrichr/",
+        "tag": "gene enrichment tool"
+    },
+    {
+        "logo": "https://www.expasy.org/favicon.ico",
+        "name": "ExPASy",
+        "url": "https://www.expasy.org/",
+        "tag": "bioinformatics tool"
+    },
+    {
+        "logo": "https://www.graphpad.com/static/favicons/apple-touch-icon.png",
+        "name": "GraphPad Prism",
+        "url": "https://www.graphpad.com/scientific-software/prism/",
+        "tag": "data analysis tool"
+    },
+    {
+        "logo": "https://www.ebi.ac.uk/favicon.ico",
+        "name": "EMBL-EBI",
+        "url": "https://www.ebi.ac.uk/",
+        "tag": "bioinformatics tool"
+    },
+    {
+        "logo": "https://molbiotools.com/favicon.ico",
+        "name": "Molbiotools",
+        "url": "https://molbiotools.com/",
+        "tag": "sequence analysis tool"
+    }
+,
+    {
+        "logo": "https://pharmaprodb.com/img/favicon.ico",
+        "name": "PharmaProDB",
+        "url": "https://pharmaprodb.com/",
+        "tag": "biopharma database"
+    },
+    {
+        "logo": "https://www.pharmashots.com/apple-touch-icon.png",
+        "name": "PharmaShots",
+        "url": "https://www.pharmashots.com/",
+        "tag": "biopharma news"
+    },
+    {
+        "logo": "https://pharmexec.com/themes/custom/penton_subtheme/favicon.ico",
+        "name": "Pharmaceutical Executive",
+        "url": "https://www.pharmexec.com/",
+        "tag": "biopharma business"
+    },
+    {
+        "logo": "https://endpts.com/apple-touch-icon.png",
+        "name": "Endpoints News",
+        "url": "https://endpts.com/",
+        "tag": "biopharma news"
+    },
+    {
+        "logo": "https://www.biopharmadive.com/static/favicon.ico",
+        "name": "BioPharma Dive",
+        "url": "https://www.biopharmadive.com/",
+        "tag": "biopharma news"
+    },
+    {
+        "logo": "https://www.biospace.com/favicon.ico",
+        "name": "BioSpace",
+        "url": "https://www.biospace.com/",
+        "tag": "biopharma jobs news"
+    },
+    {
+        "logo": "https://www.genengnews.com/wp-content/themes/gen/favicon.ico",
+        "name": "Genetic Engineering & Biotechnology News",
+        "url": "https://www.genengnews.com/",
+        "tag": "biopharma biotechnology"
+    },
+    {
+        "logo": "https://www.pharmcube.com/favicon.ico",
+        "name": "药融云Pharmcube",
+        "url": "https://www.pharmcube.com/",
+        "tag": "biopharma data"
+    },
+    {
+        "logo": "https://www.pharmnet.com.cn/favicon.ico",
+        "name": "中国医药网",
+        "url": "https://www.pharmnet.com.cn/",
+        "tag": "industry news"
+    },
+    {
+        "logo": "https://www.pharmadl.com/favicon.ico",
+        "name": "药渡经纬Pharmadl",
+        "url": "https://www.pharmadl.com/",
+        "tag": "biopharma data"
+    },
+    {
+        "logo": "https://www.pharmcube.com/favicon.ico",
+        "name": "药融云Pharmcube（临床试验库）",
+        "url": "https://db.pharmcube.com.cn/clinical",
+        "tag": "clinical trial"
+    },
+    {
+        "logo": "https://db.dxy.cn/favicon.ico",
+        "name": "丁香园数据库",
+        "url": "https://db.dxy.cn/",
+        "tag": "medical data"
+    },
+    {
+        "logo": "https://db.yaozh.com/favicon.ico",
+        "name": "药智数据库",
+        "url": "https://db.yaozh.com/",
+        "tag": "biopharma database"
+    },
+    {
+        "logo": "https://www.yaozh.com/favicon.ico",
+        "name": "药智网",
+        "url": "https://www.yaozh.com/",
+        "tag": "biopharma news"
+    },
+    {
+        "logo": "https://db.yaodata.com/favicon.ico",
+        "name": "药数数据库",
+        "url": "https://db.yaodata.com/",
+        "tag": "biopharma data"
+    },
+    {
+        "logo": "https://www.medlive.cn/favicon.ico",
+        "name": "梅斯医学",
+        "url": "https://www.medlive.cn/",
+        "tag": "medical news"
+    },
+    {
+        "logo": "https://db.cde.org.cn/favicon.ico",
+        "name": "CDE数据",
+        "url": "http://db.cde.org.cn/",
+        "tag": "drug data"
+    },
+    {
+        "logo": "https://welib.org/favicon.ico",
+        "name": "Welib",
+        "url": "https://welib.org/",
+        "tag": "e-book"
+    },
 ]
 

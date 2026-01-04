@@ -9,30 +9,42 @@ createApp({
     const tagsList = ref([]);
     const searchInputRef = ref(null);
 
-    // 颜色数组
+    // 颜色数组 - 为不同标签类型准备的颜色
     const colors = [
-      "hsla(233, 100%, 90%, 1)",
-      "hsla(234, 80%, 88%, 1)",
-      "hsl(150deg 46% 71%)",
-      "hsla(259, 84%, 78%, 1)",
-      "hsla(311, 74%, 87%, 1)",
-      "hsla(221, 59%, 75%, 1)",
-      "hsla(312, 77%, 86%, 1)",
-      "hsla(242, 58%, 73%, 1)",
-      "hsla(311, 74%, 87%, 1)",
+      "hsla(233, 100%, 90%, 1)",  // 蓝色系
+      "hsla(234, 80%, 88%, 1)",   // 蓝色系
+      "hsl(150deg 46% 71%)",      // 绿色系
+      "hsla(259, 84%, 78%, 1)",   // 紫色系
+      "hsla(311, 74%, 87%, 1)",   // 粉色系
+      "hsla(221, 59%, 75%, 1)",   // 蓝色系
+      "hsla(312, 77%, 86%, 1)",   // 粉色系
+      "hsla(242, 58%, 73%, 1)",   // 紫色系
+      "hsla(311, 74%, 87%, 1)",   // 粉色系
+      "hsla(45, 90%, 85%, 1)",    // 黄色系
+      "hsla(15, 80%, 80%, 1)",    // 橙色系
+      "hsla(180, 60%, 75%, 1)",   // 青色系
     ];
 
-    // 为每个数据项分配颜色（使用计算属性，基于 URL 生成稳定颜色）
+    // 根据标签生成颜色的函数
+    const getColorByTag = (tag) => {
+      if (!tag) return colors[0];
+      // 使用标签的哈希值来生成稳定的颜色索引
+      const hash = tag.split('').reduce((acc, char) => {
+        return ((acc << 5) - acc) + char.charCodeAt(0);
+      }, 0);
+      const colorIndex = Math.abs(hash) % colors.length;
+      return colors[colorIndex];
+    };
+
+    // 为每个数据项分配颜色（使用计算属性，基于标签生成稳定颜色）
     const dataWithColors = computed(() => {
       return filteredData.value.map(item => {
-        // 为每个项目生成稳定的颜色（基于 URL 的哈希）
-        const hash = item.url.split('').reduce((acc, char) => {
-          return ((acc << 5) - acc) + char.charCodeAt(0);
-        }, 0);
-        const colorIndex = Math.abs(hash) % colors.length;
+        // 获取第一个标签（如果标签包含多个，用空格分隔）
+        const mainTag = item.tag ? item.tag.split(' ')[0].trim() : '';
+        const color = getColorByTag(mainTag);
         return {
           ...item,
-          color: colors[colorIndex]
+          color: color
         };
       });
     });
@@ -163,7 +175,17 @@ createApp({
       event.target.onerror = null;
     };
 
-    // 获取标签按钮的颜色（基于标签名称生成稳定颜色）
+    // 计算颜色亮度（用于判断使用深色还是浅色文字）
+    const getLuminance = (color) => {
+      // 从 HSLA 字符串中提取亮度值
+      const hslMatch = color.match(/hsla?\((\d+(?:\.\d+)?),?\s*(\d+(?:\.\d+)?)%?,?\s*(\d+(?:\.\d+)?)%?/);
+      if (hslMatch && hslMatch[3]) {
+        return parseFloat(hslMatch[3]);
+      }
+      return 50; // 默认中等亮度
+    };
+
+    // 获取标签按钮的背景色（基于标签名称生成稳定颜色，优化饱和度和亮度）
     const tagColors = ref(new Map());
     const getTagColor = (tag) => {
       if (!tagColors.value.has(tag)) {
@@ -171,9 +193,38 @@ createApp({
           return ((acc << 5) - acc) + char.charCodeAt(0);
         }, 0);
         const colorIndex = Math.abs(hash) % colors.length;
-        tagColors.value.set(tag, colors[colorIndex]);
+        let baseColor = colors[colorIndex];
+        
+        // 调整颜色以提高可读性：优化饱和度和亮度
+        const hslMatch = baseColor.match(/hsla?\((\d+(?:\.\d+)?),?\s*(\d+(?:\.\d+)?)%?,?\s*(\d+(?:\.\d+)?)%?/);
+        if (hslMatch) {
+          const h = hslMatch[1];
+          let s = parseFloat(hslMatch[2]) || 70;
+          let l = parseFloat(hslMatch[3]) || 60;
+          
+          // 优化饱和度和亮度：使颜色更鲜明但不刺眼
+          s = Math.min(Math.max(s, 60), 80); // 饱和度在60-80%之间
+          l = Math.min(Math.max(l, 50), 75); // 亮度在50-75%之间
+          
+          baseColor = `hsla(${h}, ${s}%, ${l}%, 0.95)`;
+        }
+        
+        tagColors.value.set(tag, baseColor);
       }
       return tagColors.value.get(tag);
+    };
+
+    // 获取标签按钮的文字颜色（根据背景色亮度自动选择，确保高对比度）
+    const getTagTextColor = (tag) => {
+      const bgColor = getTagColor(tag);
+      const luminance = getLuminance(bgColor);
+      // 如果背景色较亮（亮度>65），使用深色文字，否则使用浅色文字
+      // 使用更高的对比度阈值，确保文字清晰可读
+      if (luminance > 65) {
+        return 'rgba(0, 0, 0, 0.9)'; // 深色文字，更高不透明度
+      } else {
+        return 'rgba(255, 255, 255, 0.98)'; // 浅色文字，更高不透明度
+      }
     };
 
     // 组件挂载后的初始化
@@ -201,6 +252,7 @@ createApp({
       handleTagClick,
       handleImageError,
       getTagColor,
+      getTagTextColor,
       getCardStyle,
     };
   },

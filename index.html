@@ -30,7 +30,10 @@
             <button
               v-for="tag in tagsList"
               :key="tag"
-              :style="{ backgroundColor: getTagColor(tag) }"
+              :style="{ 
+                backgroundColor: getTagColor(tag),
+                color: getTagTextColor(tag)
+              }"
               @click="handleTagClick(tag)"
             >
               {{ tag }}
